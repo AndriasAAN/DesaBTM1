@@ -39,6 +39,12 @@ const nextConfig: NextConfig = {
         hostname: 'okes.disway.id',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'stasan.okukab.go.id',
+        port: '',
+        pathname: '/**',
       }
     ],
   },
