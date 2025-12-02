@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import * as Lucide from "lucide-react";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 export const metadata = {
   title: "Layanan Publik - Website Desa Batumarta 1",
@@ -35,8 +36,10 @@ export default function LayananPage() {
               <CardDescription>{service.description}</CardDescription>
             </CardContent>
             <CardFooter className="w-full">
-              <Button variant="outline" className="w-full bg-accent/10 border-accent/20 text-accent-foreground hover:bg-accent/20">
-                Pelajari Lebih Lanjut <ArrowRight className="ml-2 h-4 w-4" />
+              <Button asChild variant="outline" className="w-full bg-accent/10 border-accent/20 text-accent-foreground hover:bg-accent/20">
+                <Link href="#">
+                  Pelajari Lebih Lanjut <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
               </Button>
             </CardFooter>
           </Card>
