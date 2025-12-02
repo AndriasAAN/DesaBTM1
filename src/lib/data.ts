@@ -17,18 +17,28 @@ export const navItems = [
 
 export const newsArticles = [
   {
-    id: '11',
-    title: 'Kunjungan Kerja Gubernur Sumsel ke Batumarta I',
-    date: '22 Agustus 2020',
-    excerpt: 'Gubernur Sumatera Selatan, H. Herman Deru, melakukan kunjungan kerja ke Desa Batumarta I untuk meninjau infrastruktur jalan dan menyerahkan berbagai bantuan kepada masyarakat.',
-    image: findImage('news-gubernur')
+    id: '8',
+    title: 'MUI OKU Safari Sholat Subuh Berjemaah di Masjid Nurul Huda Batumarta 1',
+    date: '14 Januari 2024',
+    excerpt: 'MUI Kabupaten OKU mengadakan safari sholat subuh berjemaah di Masjid Nurul Huda, Desa Batumarta 1. Kegiatan ini bertujuan untuk mempererat silaturahmi dan meningkatkan keimanan masyarakat.',
+    image: {
+      "id": "news-8",
+      "description": "Suasana sholat subuh berjemaah di Masjid Nurul Huda.",
+      "imageUrl": "https://radarpalembang.bacakoran.co/upload/a052d745a48d3f8e4977979c39ae861a.jpg",
+      "imageHint": "congregational prayer"
+    }
   },
   {
-    id: '10',
-    title: 'Zona Hijau Percantik Stadion Mini Batumarta I',
-    date: '25 Januari 2022',
-    excerpt: 'Karang Taruna Desa Batumarta I berinisiatif membuat zona hijau di sekitar stadion mini untuk memperindah fasilitas olahraga dan menciptakan area yang nyaman bagi masyarakat.',
-    image: findImage('news-stadion')
+    id: '6',
+    title: 'Laga Allstar Persipra FC Lawan Panser FC Berlangsung Seru',
+    date: '1 Agustus 2023',
+    excerpt: 'Laga persahabatan antara Persipra FC Allstar dan Panser FC berlangsung meriah di lapangan sepak bola Blok D. Pertandingan ini menjadi ajang silaturahmi dan hiburan bagi masyarakat.',
+    image: {
+      "id": "news-6",
+      "description": "Pertandingan sepak bola amatir di lapangan desa.",
+      "imageUrl": "https://okes.disway.id/upload/bfe8c5bcdd7755fe9c1403f6e7c0881f.jpg",
+      "imageHint": "soccer match"
+    },
   },
   {
     id: '9',
@@ -55,28 +65,11 @@ export const newsArticles = [
     },
   },
   {
-    id: '7',
-    title: 'Pencanangan Desa Cinta Statistik (Desa CANTIK) di Batumarta 1',
-    date: '30 Juni 2021',
-    excerpt: 'BPS OKU mencanangkan Desa Batumarta 1 sebagai Desa Cinta Statistik (CANTIK) untuk meningkatkan literasi dan pengelolaan data di tingkat desa guna mendukung pembangunan.',
-    image: {
-      "id": "news-7",
-      "description": "Pencanangan Desa Cinta Statistik (Desa CANTIK) di Desa Batumarta 1.",
-      "imageUrl": "https://stasan.okukab.go.id/wp-content/uploads/2021/06/WhatsApp-Image-2021-06-30-at-14.50.03.jpeg",
-      "imageHint": "data presentation"
-    },
-  },
-  {
-    id: '6',
-    title: 'Laga Allstar Persipra FC Lawan Panser FC Berlangsung Seru',
-    date: '1 Agustus 2023',
-    excerpt: 'Laga persahabatan antara Persipra FC Allstar dan Panser FC berlangsung meriah di lapangan sepak bola Blok D. Pertandingan ini menjadi ajang silaturahmi dan hiburan bagi masyarakat.',
-    image: {
-      "id": "news-6",
-      "description": "Pertandingan sepak bola amatir di lapangan desa.",
-      "imageUrl": "https://okes.disway.id/upload/bfe8c5bcdd7755fe9c1403f6e7c0881f.jpg",
-      "imageHint": "soccer match"
-    },
+    id: '10',
+    title: 'Zona Hijau Percantik Stadion Mini Batumarta I',
+    date: '25 Januari 2022',
+    excerpt: 'Karang Taruna Desa Batumarta I berinisiatif membuat zona hijau di sekitar stadion mini untuk memperindah fasilitas olahraga dan menciptakan area yang nyaman bagi masyarakat.',
+    image: findImage('news-stadion')
   },
   {
     id: '5',
@@ -91,16 +84,23 @@ export const newsArticles = [
     },
   },
   {
-    id: '8',
-    title: 'MUI OKU Safari Sholat Subuh Berjemaah di Masjid Nurul Huda Batumarta 1',
-    date: '14 Januari 2024',
-    excerpt: 'MUI Kabupaten OKU mengadakan safari sholat subuh berjemaah di Masjid Nurul Huda, Desa Batumarta 1. Kegiatan ini bertujuan untuk mempererat silaturahmi dan meningkatkan keimanan masyarakat.',
+    id: '7',
+    title: 'Pencanangan Desa Cinta Statistik (Desa CANTIK) di Batumarta 1',
+    date: '30 Juni 2021',
+    excerpt: 'BPS OKU mencanangkan Desa Batumarta 1 sebagai Desa Cinta Statistik (CANTIK) untuk meningkatkan literasi dan pengelolaan data di tingkat desa guna mendukung pembangunan.',
     image: {
-      "id": "news-8",
-      "description": "Suasana sholat subuh berjemaah di Masjid Nurul Huda.",
-      "imageUrl": "https://radarpalembang.bacakoran.co/upload/a052d745a48d3f8e4977979c39ae861a.jpg",
-      "imageHint": "congregational prayer"
+      "id": "news-7",
+      "description": "Pencanangan Desa Cinta Statistik (Desa CANTIK) di Desa Batumarta 1.",
+      "imageUrl": "https://stasan.okukab.go.id/wp-content/uploads/2021/06/WhatsApp-Image-2021-06-30-at-14.50.03.jpeg",
+      "imageHint": "data presentation"
     },
+  },
+  {
+    id: '11',
+    title: 'Kunjungan Kerja Gubernur Sumsel ke Batumarta I',
+    date: '22 Agustus 2020',
+    excerpt: 'Gubernur Sumatera Selatan, H. Herman Deru, melakukan kunjungan kerja ke Desa Batumarta I untuk meninjau infrastruktur jalan dan menyerahkan berbagai bantuan kepada masyarakat.',
+    image: findImage('news-gubernur')
   },
 ];
 
