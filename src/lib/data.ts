@@ -17,6 +17,13 @@ export const navItems = [
 
 export const newsArticles = [
   {
+    id: '10',
+    title: 'Zona Hijau Percantik Stadion Mini Batumarta I',
+    date: '25 Januari 2022',
+    excerpt: 'Karang Taruna Desa Batumarta I berinisiatif membuat zona hijau di sekitar stadion mini untuk memperindah fasilitas olahraga dan menciptakan area yang nyaman bagi masyarakat.',
+    image: findImage('news-stadion')
+  },
+  {
     id: '9',
     title: 'Pengukuhan Pengurus Paguyuban PUJASUMA di Desa Batumarta 1',
     date: '12 Maret 2023',
