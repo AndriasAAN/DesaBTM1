@@ -1,8 +1,8 @@
 import Link from "next/link";
-import { Mountain } from "lucide-react";
 import { navItems } from "@/lib/data";
 import { MobileNav } from "./mobile-nav";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 export function Header() {
   return (
@@ -13,7 +13,7 @@ export function Header() {
             href="/"
             className="flex items-center gap-2 text-lg font-semibold md:text-base font-headline text-primary"
           >
-            <Mountain className="h-6 w-6" />
+            <Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Logo_OKU_baru.png/250px-Logo_OKU_baru.png" alt="Logo OKU" width={24} height={24} className="h-6 w-6" />
             <span className="whitespace-nowrap">Batumarta Satu Digital</span>
           </Link>
           {navItems.map((item) => (
@@ -36,7 +36,7 @@ export function Header() {
                     href="/"
                     className="flex items-center gap-2 text-lg font-semibold font-headline text-primary"
                 >
-                    <Mountain className="h-6 w-6" />
+                    <Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Logo_OKU_baru.png/250px-Logo_OKU_baru.png" alt="Logo OKU" width={24} height={24} className="h-6 w-6" />
                     <span>Batumarta Satu</span>
                 </Link>
             </div>

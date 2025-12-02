@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import Link from "next/link";
-import { Menu, Mountain } from "lucide-react";
+import { Menu } from "lucide-react";
 import { navItems } from "@/lib/data";
 import { Button } from "@/components/ui/button";
 import {
@@ -10,6 +10,7 @@ import {
   SheetContent,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import Image from "next/image";
 
 export function MobileNav() {
   const [open, setOpen] = React.useState(false);
@@ -29,7 +30,7 @@ export function MobileNav() {
             className="flex items-center gap-2 text-lg font-semibold font-headline text-primary"
             onClick={() => setOpen(false)}
           >
-            <Mountain className="h-6 w-6" />
+            <Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Logo_OKU_baru.png/250px-Logo_OKU_baru.png" alt="Logo OKU" width={24} height={24} className="h-6 w-6" />
             <span>Batumarta Satu</span>
           </Link>
           {navItems.map((item) => (
