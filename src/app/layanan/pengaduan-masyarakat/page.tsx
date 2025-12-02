@@ -1,12 +1,13 @@
 "use client";
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { useToast } from '@/hooks/use-toast';
+import { publicComplaints as initialComplaints } from '@/lib/data';
 
 export default function PengaduanMasyarakatPage() {
     const { toast } = useToast();
@@ -25,23 +26,49 @@ export default function PengaduanMasyarakatPage() {
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
-        // For now, we'll just show a success message.
-        // In a real application, this would send data to a server.
-        console.log("Form data submitted:", formData);
+        
+        const newComplaint = {
+            name: formData.nama,
+            date: new Date().toISOString().split('T')[0], // YYYY-MM-DD
+            message: formData.pesan,
+        };
 
-        toast({
-            title: "Pengaduan Terkirim",
-            description: "Terima kasih atas masukan Anda. Pengaduan Anda telah kami terima.",
-        });
+        try {
+            // Get existing complaints from localStorage
+            const storedComplaints = JSON.parse(localStorage.getItem('publicComplaints') || '[]');
+            
+            // On first submission, if localStorage is empty, seed it with initial data
+            if (storedComplaints.length === 0) {
+                 const complaintsToStore = [...initialComplaints, newComplaint];
+                 localStorage.setItem('publicComplaints', JSON.stringify(complaintsToStore));
+            } else {
+                 const updatedComplaints = [newComplaint, ...storedComplaints];
+                 localStorage.setItem('publicComplaints', JSON.stringify(updatedComplaints));
+            }
 
-        // Reset form
-        setFormData({
-            nama: '',
-            nik: '',
-            alamat: '',
-            telepon: '',
-            pesan: '',
-        });
+
+            toast({
+                title: "Pengaduan Terkirim",
+                description: "Terima kasih! Aspirasi Anda telah dicatat dan akan tampil di halaman depan.",
+            });
+
+            // Reset form
+            setFormData({
+                nama: '',
+                nik: '',
+                alamat: '',
+                telepon: '',
+                pesan: '',
+            });
+
+        } catch (error) {
+            console.error("Failed to save complaint to localStorage:", error);
+            toast({
+                variant: "destructive",
+                title: "Gagal Menyimpan",
+                description: "Terjadi kesalahan saat menyimpan aspirasi Anda. Silakan coba lagi.",
+            });
+        }
     };
 
   return (

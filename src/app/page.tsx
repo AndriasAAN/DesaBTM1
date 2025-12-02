@@ -1,8 +1,11 @@
+
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { newsArticles, publicServices, umkmList, eventCalendar, publicComplaints } from "@/lib/data";
+import { newsArticles, publicServices, umkmList, eventCalendar, publicComplaints as initialComplaints } from "@/lib/data";
 import { ArrowRight, Calendar, Newspaper, Briefcase, MessageSquareQuote } from "lucide-react";
 import * as Lucide from "lucide-react";
 import { placeholderImages } from "@/lib/placeholder-images.json";
@@ -14,6 +17,8 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel"
 import { Badge } from "@/components/ui/badge";
+import { useState, useEffect } from "react";
+
 
 const heroImages = [
     placeholderImages.find(img => img.id === 'hero-1'),
@@ -62,6 +67,24 @@ const parseDate = (dateStr: string) => {
 
 
 export default function Home() {
+    const [publicComplaints, setPublicComplaints] = useState(initialComplaints);
+
+    useEffect(() => {
+        try {
+            const storedComplaints = JSON.parse(localStorage.getItem('publicComplaints') || '[]');
+            if (storedComplaints.length > 0) {
+                setPublicComplaints(storedComplaints);
+            } else {
+                // If localStorage is empty but we have initial data, set it in localStorage
+                localStorage.setItem('publicComplaints', JSON.stringify(initialComplaints));
+            }
+        } catch (error) {
+            console.error("Failed to parse complaints from localStorage:", error);
+            // Fallback to initial data if parsing fails
+            setPublicComplaints(initialComplaints);
+        }
+    }, []);
+
   return (
     <div className="flex flex-col min-h-screen">
       <main className="flex-grow">
