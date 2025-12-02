@@ -18,8 +18,8 @@ export function MobileNav() {
   return (
     <Sheet open={open} onOpenChange={setOpen}>
       <SheetTrigger asChild>
-        <Button variant="outline" size="icon" className="shrink-0 md:hidden">
-          <Menu className="h-5 w-5" />
+        <Button variant="ghost" size="icon" className="shrink-0 md:hidden text-primary">
+          <Menu className="h-6 w-6" />
           <span className="sr-only">Toggle navigation menu</span>
         </Button>
       </SheetTrigger>

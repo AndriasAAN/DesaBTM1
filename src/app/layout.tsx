@@ -4,6 +4,18 @@ import { cn } from '@/lib/utils';
 import { Toaster } from '@/components/ui/toaster';
 import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
+import { Inter as FontSans, Playfair_Display as FontHeadline } from 'next/font/google';
+
+const fontSans = FontSans({
+  subsets: ["latin"],
+  variable: "--font-sans",
+});
+
+const fontHeadline = FontHeadline({
+  subsets: ["latin"],
+  variable: "--font-headline",
+});
+
 
 export const metadata: Metadata = {
   title: 'Website Desa Batumarta 1',
@@ -17,14 +29,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
-        <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" />
-      </head>
+      <head />
       <body className={cn(
-        'min-h-screen bg-background font-body antialiased flex flex-col'
+        'min-h-screen bg-background font-body antialiased flex flex-col',
+        fontSans.variable,
+        fontHeadline.variable
       )}>
         <Header />
         <main className="flex-grow">{children}</main>
