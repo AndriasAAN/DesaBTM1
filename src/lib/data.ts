@@ -156,6 +156,13 @@ export const umkmList = [
         contact: "083456789012",
         image: findImage('umkm-3')
     },
+    {
+        name: "Kedai Al Fazza",
+        category: "Cafe & Eatery",
+        description: "Cafe dan tempat makan yang menyediakan berbagai minuman dan makanan ringan. Tempat yang nyaman untuk bersantai.",
+        contact: "Kontak belum tersedia",
+        image: findImage('umkm-4')
+    }
 ];
 
 export const eventCalendar = [
@@ -209,3 +216,5 @@ export const profileData = {
         ]
     }
 }
+
+    

@@ -63,7 +63,7 @@
     {
       "id": "news-7",
       "description": "Pencanangan Desa Cinta Statistik (Desa CANTIK) di Desa Batumarta 1.",
-      "imageUrl": "https://stasan.okukab.go.id/wp-content/uploads/2021/06/WhatsApp-Image-2021-06-30-at-14.50.03-300x200.jpeg",
+      "imageUrl": "https://stasan.okukab.go.id/wp-content/uploads/2021/06/WhatsApp-Image-2021-06-30-at-14.50.03.jpeg",
       "imageHint": "data presentation"
     },
     {
@@ -137,6 +137,12 @@
       "description": "Warung kopi sederhana di pinggir jalan.",
       "imageUrl": "https://images.unsplash.com/photo-1542372147193-a7aca54189cd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjb2ZmZWUlMjBzaG9wfGVufDB8fHx8MTc2NDU1MjkwMHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "coffee shop"
+    },
+    {
+      "id": "umkm-4",
+      "description": "Suasana di Kedai Al Fazza.",
+      "imageUrl": "https://images.unsplash.com/photo-1724589511191-1ced6d014934?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtb2Rlcm4lMjBjYWZlfGVufDB8fHx8MTc2NDY1ODYxNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "modern cafe"
     },
     {
       "id": "profile-history",
