@@ -17,6 +17,13 @@ export const navItems = [
 
 export const newsArticles = [
   {
+    id: '7',
+    title: 'Pencanangan Desa Cinta Statistik (Desa CANTIK) di Batumarta 1',
+    date: '30 Juni 2021',
+    excerpt: 'BPS OKU mencanangkan Desa Batumarta 1 sebagai Desa Cinta Statistik (CANTIK) untuk meningkatkan literasi dan pengelolaan data di tingkat desa guna mendukung pembangunan.',
+    image: findImage('news-7'),
+  },
+  {
     id: '6',
     title: 'Laga Allstar Persipra FC Lawan Panser FC Berlangsung Seru',
     date: '1 Agustus 2023',
@@ -170,3 +177,5 @@ export const profileData = {
         ]
     }
 }
+
+    
