@@ -123,11 +123,6 @@ export const publicServices = [
         icon: "FileText"
     },
     {
-        title: "Izin Usaha Mikro",
-        description: "Prosedur dan persyaratan untuk mendapatkan izin usaha mikro dan kecil (IUMK).",
-        icon: "Store"
-    },
-    {
         title: "Layanan Kependudukan",
         description: "Informasi terkait pengurusan akta kelahiran, kematian, dan pindah domisili.",
         icon: "Users"

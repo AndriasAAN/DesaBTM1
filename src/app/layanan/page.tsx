@@ -25,9 +25,14 @@ export default function LayananPage() {
         </p>
       </div>
 
-      <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {publicServices.map((service) => {
-          const serviceUrl = service.title === "Surat Pengantar" ? "/layanan/surat-pengantar" : "#";
+          let serviceUrl = "#";
+          if (service.title === "Surat Pengantar") {
+            serviceUrl = "/layanan/surat-pengantar";
+          } else if (service.title === "Layanan Kependudukan") {
+            serviceUrl = "/layanan/kependudukan";
+          }
           return (
             <Card key={service.title} className="flex flex-col text-center items-center hover:shadow-accent/20 hover:shadow-lg transition-shadow duration-300">
               <CardHeader className="items-center">
