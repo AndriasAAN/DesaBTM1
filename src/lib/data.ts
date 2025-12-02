@@ -17,6 +17,13 @@ export const navItems = [
 
 export const newsArticles = [
   {
+    id: '6',
+    title: 'Laga Allstar Persipra FC Lawan Panser FC Berlangsung Seru',
+    date: '1 Agustus 2023',
+    excerpt: 'Laga persahabatan antara Persipra FC Allstar dan Panser FC berlangsung meriah di lapangan sepak bola Blok D. Pertandingan ini menjadi ajang silaturahmi dan hiburan bagi masyarakat.',
+    image: findImage('news-6'),
+  },
+  {
     id: '5',
     title: 'Masyarakat Desa Batumarta I Antusias Ikuti Program Vaksinasi',
     date: '28 Oktober 2021',
