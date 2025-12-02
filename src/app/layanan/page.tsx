@@ -30,7 +30,9 @@ export default function LayananPage() {
           <Card key={service.title} className="flex flex-col text-center items-center hover:shadow-accent/20 hover:shadow-lg transition-shadow duration-300">
             <CardHeader className="items-center">
               {getIcon(service.icon)}
-              <CardTitle className="font-headline">{service.title}</CardTitle>
+              <Link href="#">
+                <CardTitle className="font-headline hover:text-primary transition-colors">{service.title}</CardTitle>
+              </Link>
             </CardHeader>
             <CardContent className="flex-grow">
               <CardDescription>{service.description}</CardDescription>
