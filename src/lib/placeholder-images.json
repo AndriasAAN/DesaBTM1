@@ -93,7 +93,7 @@
     {
       "id": "gallery-8",
       "description": "Jalanan desa yang asri dengan pepohonan.",
-      "imageUrl": "https://images.unsplash.com/photo-1621856294769-16ad8f3127aa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx2aWxsYWdlJTIwcm9hZHxlbnwwfHx8fDE3NjQ2NDg2NjN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1621856294769-16ad8f3127aa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx2aWxsYWdlJTIwcm9hZHxlbnwwfHx8fDE3NjQ2NDg2NjN8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "village road"
     },
     {
@@ -105,7 +105,7 @@
     {
       "id": "umkm-1",
       "description": "Produk makanan ringan khas desa.",
-      "imageUrl": "https://images.unsplash.com/photo-1591726185073-8a8e17e42e20?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxsb2NhbCUyMGZvb2R8ZW58MHx8fHwxNzY0NjQ4NjYzfDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1591726185073-8a8e17e42e20?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxsb2NhbCUyMGZvb2R8ZW58MHx8fHwxNzY0NjQ4NjYzfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "local food"
     },
     {
@@ -129,7 +129,7 @@
     {
       "id": "profile-demography",
       "description": "Keramaian warga desa dalam sebuah acara.",
-      "imageUrl": "https://images.unsplash.com/photo-1729592668320-5d2c845756f8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx2aWxsYWdlJTIwY3Jvd2R8ZW58MHx8fHwxNzY0NjQ4NjYzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1729592668320-5d2c845756f8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx2aWxsYWdlJTIwY3Jvd2R8ZW58MHx8fHwxNzY0NjQ4NjYzfDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "village crowd"
     }
   ]

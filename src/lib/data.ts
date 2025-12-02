@@ -17,6 +17,13 @@ export const navItems = [
 
 export const newsArticles = [
   {
+    id: '1',
+    title: 'PKK Desa Batumarta I Bentuk Class Balita',
+    date: '13 Juli 2022',
+    excerpt: 'Tim Penggerak PKK Desa Batumarta I membentuk Class Balita sebagai wadah edukasi dini yang mencakup aspek agama, motorik, dan sensorik. Program ini disambut positif oleh masyarakat setempat.',
+    image: findImage('news-1'),
+  },
+  {
     id: '7',
     title: 'Pencanangan Desa Cinta Statistik (Desa CANTIK) di Batumarta 1',
     date: '30 Juni 2021',
@@ -51,13 +58,6 @@ export const newsArticles = [
       "imageUrl": "https://okes.disway.id/upload/2021/11/ecc1323a-0ce0-4ca0-bbb0-e928e18ad6c9.jpg",
       "imageHint": "welcome monument"
     },
-  },
-  {
-    id: '1',
-    title: 'PKK Desa Batumarta I Bentuk Class Balita',
-    date: '13 Juli 2022',
-    excerpt: 'Tim Penggerak PKK Desa Batumarta I membentuk Class Balita sebagai wadah edukasi dini yang mencakup aspek agama, motorik, dan sensorik. Program ini disambut positif oleh masyarakat setempat.',
-    image: findImage('news-1'),
   },
   {
     id: '8',
