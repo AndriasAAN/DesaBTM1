@@ -32,6 +32,8 @@ export default function LayananPage() {
             serviceUrl = "/layanan/surat-pengantar";
           } else if (service.title === "Layanan Kependudukan") {
             serviceUrl = "/layanan/kependudukan";
+          } else if (service.title === "Pengaduan Masyarakat") {
+            serviceUrl = "/layanan/pengaduan-masyarakat";
           }
           return (
             <Card key={service.title} className="flex flex-col text-center items-center hover:shadow-accent/20 hover:shadow-lg transition-shadow duration-300">
