@@ -41,8 +41,10 @@ export default function BeritaPage() {
               <p className="text-muted-foreground text-sm line-clamp-3">{article.excerpt}</p>
             </CardContent>
             <CardFooter>
-              <Button variant="secondary" className="w-full">
-                Baca Selengkapnya
+              <Button asChild variant="secondary" className="w-full">
+                <Link href={`/berita/${article.id}`}>
+                  Baca Selengkapnya
+                </Link>
               </Button>
             </CardFooter>
           </Card>

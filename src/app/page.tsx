@@ -109,7 +109,7 @@ export default function Home() {
                   </CardContent>
                   <div className="p-6 pt-0">
                     <Button variant="link" asChild className="p-0 h-auto text-primary">
-                      <Link href="/berita">
+                      <Link href={`/berita/${article.id}`}>
                         Baca Selengkapnya <ArrowRight className="ml-2 h-4 w-4" />
                       </Link>
                     </Button>
