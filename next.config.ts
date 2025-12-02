@@ -69,6 +69,12 @@ const nextConfig: NextConfig = {
         hostname: 'resoku.sumsel.polri.go.id',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'lh3.googleusercontent.com',
+        port: '',
+        pathname: '/**',
       }
     ],
   },
