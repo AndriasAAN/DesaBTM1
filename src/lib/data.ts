@@ -88,12 +88,7 @@ export const newsArticles = [
     title: 'Pencanangan Desa Cinta Statistik (Desa CANTIK) di Batumarta 1',
     date: '30 Juni 2021',
     excerpt: 'BPS OKU mencanangkan Desa Batumarta 1 sebagai Desa Cinta Statistik (CANTIK) untuk meningkatkan literasi dan pengelolaan data di tingkat desa guna mendukung pembangunan.',
-    image: {
-      "id": "news-7",
-      "description": "Pencanangan Desa Cinta Statistik (Desa CANTIK) di Desa Batumarta 1.",
-      "imageUrl": "https://stasan.okukab.go.id/wp-content/uploads/2021/06/WhatsApp-Image-2021-06-30-at-14.50.03.jpeg",
-      "imageHint": "data presentation"
-    },
+    image: findImage('news-7')
   },
   {
     id: '11',
@@ -108,6 +103,7 @@ export const galleryImages = [
     findImage('gallery-10'),
     findImage('gallery-11'),
     findImage('gallery-12'),
+    findImage('gallery-13'),
 ];
 
 export const publicServices = [
@@ -209,6 +205,7 @@ export const publicComplaints = [
 ];
 
     
+
 
 
 
