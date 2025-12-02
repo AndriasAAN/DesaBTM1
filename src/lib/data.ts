@@ -17,6 +17,13 @@ export const navItems = [
 
 export const newsArticles = [
   {
+    id: '11',
+    title: 'Kunjungan Kerja Gubernur Sumsel ke Batumarta I',
+    date: '22 Agustus 2020',
+    excerpt: 'Gubernur Sumatera Selatan, H. Herman Deru, melakukan kunjungan kerja ke Desa Batumarta I untuk meninjau infrastruktur jalan dan menyerahkan berbagai bantuan kepada masyarakat.',
+    image: findImage('news-gubernur')
+  },
+  {
     id: '10',
     title: 'Zona Hijau Percantik Stadion Mini Batumarta I',
     date: '25 Januari 2022',
