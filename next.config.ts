@@ -81,6 +81,12 @@ const nextConfig: NextConfig = {
         hostname: 'encrypted-tbn0.gstatic.com',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'scontent.fplm4-1.fna.fbcdn.net',
+        port: '',
+        pathname: '/**',
       }
     ],
   },
