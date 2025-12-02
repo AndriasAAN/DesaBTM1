@@ -26,26 +26,29 @@ export default function LayananPage() {
       </div>
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        {publicServices.map((service) => (
-          <Card key={service.title} className="flex flex-col text-center items-center hover:shadow-accent/20 hover:shadow-lg transition-shadow duration-300">
-            <CardHeader className="items-center">
-              {getIcon(service.icon)}
-              <Link href="#">
-                <CardTitle className="font-headline hover:text-primary transition-colors">{service.title}</CardTitle>
-              </Link>
-            </CardHeader>
-            <CardContent className="flex-grow">
-              <CardDescription>{service.description}</CardDescription>
-            </CardContent>
-            <CardFooter className="w-full">
-              <Button asChild variant="outline" className="w-full bg-accent/10 border-accent/20 text-accent-foreground hover:bg-accent/20">
-                <Link href="#">
-                  Pelajari Lebih Lanjut <ArrowRight className="ml-2 h-4 w-4" />
+        {publicServices.map((service) => {
+          const serviceUrl = service.title === "Surat Pengantar" ? "/layanan/surat-pengantar" : "#";
+          return (
+            <Card key={service.title} className="flex flex-col text-center items-center hover:shadow-accent/20 hover:shadow-lg transition-shadow duration-300">
+              <CardHeader className="items-center">
+                {getIcon(service.icon)}
+                <Link href={serviceUrl}>
+                  <CardTitle className="font-headline hover:text-primary transition-colors">{service.title}</CardTitle>
                 </Link>
-              </Button>
-            </CardFooter>
-          </Card>
-        ))}
+              </CardHeader>
+              <CardContent className="flex-grow">
+                <CardDescription>{service.description}</CardDescription>
+              </CardContent>
+              <CardFooter className="w-full">
+                <Button asChild variant="outline" className="w-full bg-accent/10 border-accent/20 text-accent-foreground hover:bg-accent/20">
+                  <Link href={serviceUrl}>
+                    Pelajari Lebih Lanjut <ArrowRight className="ml-2 h-4 w-4" />
+                  </Link>
+                </Button>
+              </CardFooter>
+            </Card>
+          )
+        })}
       </div>
     </div>
   );
