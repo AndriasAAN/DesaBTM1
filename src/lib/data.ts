@@ -108,6 +108,7 @@ export const galleryImages = [
     findImage('gallery-10'),
     findImage('gallery-11'),
     findImage('gallery-12'),
+    findImage('gallery-13'),
 ];
 
 export const publicServices = [
@@ -209,6 +210,7 @@ export const publicComplaints = [
 ];
 
     
+
 
 
 

@@ -85,6 +85,12 @@
       "imageHint": "farmland"
     },
     {
+      "id": "gallery-13",
+      "description": "Pencanangan desa cinta statistik.",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf6g0o6d6qCg3rY8a5Z5A3e5Z4z5F6c8j6g&s",
+      "imageHint": "official ceremony"
+    },
+    {
       "id": "umkm-1",
       "description": "Produk makanan ringan khas desa.",
       "imageUrl": "https://images.unsplash.com/photo-1591726185073-8a8e17e42e20?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxsb2NhbCUyMGZvb2R8ZW58MHx8fHwxNzY0NjQ4NjYzfDA&ixlib=rb-4.1.0&q=80&w=1080",
