@@ -55,9 +55,9 @@ export const newsArticles = [
   {
     id: '1',
     title: 'PKK Desa Batumarta I Bentuk Class Balita',
-    date: '22 Juli 2024',
-    excerpt: 'PKK Desa Batumarta I membentuk Class Balita untuk memberikan edukasi dini kepada anak-anak, meliputi aspek agama, motorik, dan sensorik, yang disambut positif oleh masyarakat.',
-    image: findImage('news-2'),
+    date: '13 Juli 2022',
+    excerpt: 'Tim Penggerak PKK Desa Batumarta I membentuk Class Balita sebagai wadah edukasi dini yang mencakup aspek agama, motorik, dan sensorik. Program ini disambut positif oleh masyarakat setempat.',
+    image: findImage('news-1'),
   },
   {
     id: '8',
