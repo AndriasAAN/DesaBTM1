@@ -31,6 +31,10 @@ const monthMap: { [key: string]: string } = {
 };
 
 const parseDate = (dateStr: string) => {
+  // Handles YYYY-MM-DD format by ensuring it's treated as UTC
+  if (/^\d{4}-\d{2}-\d{2}$/.test(dateStr)) {
+    return new Date(`${dateStr}T00:00:00`);
+  }
   const parts = dateStr.split(' ');
   if (parts.length === 3) {
     const day = parts[0];
