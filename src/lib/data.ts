@@ -17,6 +17,13 @@ export const navItems = [
 
 export const newsArticles = [
   {
+    id: '5',
+    title: 'Masyarakat Desa Batumarta I Antusias Ikuti Program Vaksinasi',
+    date: '28 Oktober 2021',
+    excerpt: 'Tingginya kesadaran masyarakat Desa Batumarta 1 untuk mengikuti vaksinasi Covid-19 terlihat dari antusiasme warga yang datang ke lokasi vaksinasi di balai desa. Program ini merupakan upaya bersama untuk mencapai kekebalan komunal.',
+    image: findImage('news-5'),
+  },
+  {
     id: '1',
     title: 'Gotong Royong Membersihkan Saluran Irigasi Desa',
     date: '15 Juli 2024',
