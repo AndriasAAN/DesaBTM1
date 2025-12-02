@@ -136,27 +136,6 @@ export const publicServices = [
 
 export const umkmList = [
     {
-        name: "Warung Makan Bu Tum",
-        category: "Kuliner",
-        description: "Menyediakan masakan rumahan khas desa dengan harga terjangkau. Menu andalan: sayur lodeh dan ikan bakar.",
-        contact: "081234567890",
-        image: findImage('umkm-1')
-    },
-    {
-        name: "Kerajinan Bambu Pakde",
-        category: "Kerajinan",
-        description: "Produk kerajinan tangan dari bambu seperti kursi, meja, dan hiasan dinding yang unik dan artistik.",
-        contact: "082345678901",
-        image: findImage('umkm-2')
-    },
-    {
-        name: "Kedai Kopi 'Sawah Luhur'",
-        category: "Kuliner",
-        description: "Menikmati kopi robusta asli dari petani lokal dengan pemandangan sawah yang menenangkan.",
-        contact: "083456789012",
-        image: findImage('umkm-3')
-    },
-    {
         name: "Kedai Al Fazza",
         category: "Cafe & Eatery",
         description: "Cafe dan tempat makan yang menyediakan berbagai minuman dan makanan ringan. Tempat yang nyaman untuk bersantai.",
