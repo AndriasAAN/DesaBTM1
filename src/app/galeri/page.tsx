@@ -3,7 +3,7 @@ import { galleryImages } from "@/lib/data";
 import { Card, CardContent } from "@/components/ui/card";
 
 export const metadata = {
-  title: "Galeri Kegiatan - Batumarta Satu Digital",
+  title: "Galeri Kegiatan - Website Desa Batumarta 1",
   description: "Dokumentasi foto dan video dari berbagai kegiatan yang diselenggarakan di Desa Batumarta 1.",
 };
 

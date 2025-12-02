@@ -14,7 +14,7 @@ export function Header() {
             className="flex items-center gap-2 text-lg font-semibold md:text-base font-headline text-primary"
           >
             <Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Logo_OKU_baru.png/250px-Logo_OKU_baru.png" alt="Logo OKU" width={24} height={24} className="h-6 w-6" />
-            <span className="whitespace-nowrap">Batumarta Satu Digital</span>
+            <span className="whitespace-nowrap">Desa Batumarta 1</span>
           </Link>
           {navItems.map((item) => (
             <Link

@@ -6,7 +6,7 @@ import { newsArticles } from "@/lib/data";
 import { ArrowRight } from "lucide-react";
 
 export const metadata = {
-  title: "Berita Desa - Batumarta Satu Digital",
+  title: "Berita Desa - Website Desa Batumarta 1",
   description: "Kumpulan berita dan informasi terbaru dari Desa Batumarta 1.",
 };
 

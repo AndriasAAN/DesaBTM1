@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { CheckCircle } from "lucide-react";
 
 export const metadata = {
-  title: "Profil Desa - Batumarta Satu Digital",
+  title: "Profil Desa - Website Desa Batumarta 1",
   description: "Informasi lengkap mengenai sejarah, demografi, dan potensi Desa Batumarta 1.",
 };
 

@@ -5,7 +5,7 @@ import * as Lucide from "lucide-react";
 import { ArrowRight } from "lucide-react";
 
 export const metadata = {
-  title: "Layanan Publik - Batumarta Satu Digital",
+  title: "Layanan Publik - Website Desa Batumarta 1",
   description: "Informasi dan akses untuk layanan publik yang tersedia di Desa Batumarta 1.",
 };
 

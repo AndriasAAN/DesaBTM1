@@ -7,9 +7,9 @@ export function Footer() {
       <div className="container px-4 py-8 md:px-6">
         <div className="grid gap-8 md:grid-cols-3">
           <div>
-            <h3 className="text-lg font-headline font-semibold text-primary">Batumarta Satu Digital</h3>
+            <h3 className="text-lg font-headline font-semibold text-primary">Website Desa Batumarta 1</h3>
             <p className="mt-2 text-sm">
-              Website Resmi Pemerintah Desa Batumarta 1.
+              Kecamatan Lubuk Raja, Kabupaten OKU
             </p>
             <p className="mt-1 text-sm">
               Menuju desa digital yang informatif dan transparan.

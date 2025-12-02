@@ -66,11 +66,11 @@ export default function Home() {
           )}
           <div className="absolute inset-0 bg-black/50" />
           <div className="relative z-10 p-4">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-headline font-bold drop-shadow-lg">
-              Selamat Datang di Batumarta Satu
+            <h1 className="text-4xl md:text-6xl font-headline font-bold drop-shadow-lg tracking-tight">
+              Website Desa Batumarta 1
             </h1>
-            <p className="mt-4 text-lg md:text-xl max-w-2xl mx-auto drop-shadow">
-              Menjelajahi Informasi, Layanan, dan Potensi Desa Kami.
+            <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto drop-shadow-sm font-body">
+              Kecamatan Lubuk Raja, Kabupaten Ogan Komering Ulu (OKU), Provinsi Sumatera Selatan
             </p>
             <Button asChild size="lg" className="mt-8 bg-accent text-accent-foreground hover:bg-accent/90">
               <Link href="/profil">
