@@ -107,17 +107,17 @@ export const umkmList = [
 
 export const eventCalendar = [
     {
-        date: "17 Agustus 2024",
+        date: "2024-08-17",
         title: "Upacara dan Lomba Kemerdekaan RI",
         description: "Perayaan HUT RI ke-79 di lapangan desa, dimeriahkan dengan berbagai lomba untuk anak-anak dan dewasa."
     },
     {
-        date: "25 Agustus 2024",
+        date: "2024-08-25",
         title: "Rapat Desa Bulanan",
         description: "Rapat rutin bulanan pemerintah desa bersama BPD dan LPMD di balai desa."
     },
     {
-        date: "10 September 2024",
+        date: "2024-09-10",
         title: "Festival Panen Raya",
         description: "Syukuran atas hasil panen yang melimpah, diisi dengan pertunjukan seni dan bazar produk pertanian."
     }

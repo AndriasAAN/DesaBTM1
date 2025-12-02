@@ -14,6 +14,35 @@ const getIcon = (iconName: string) => {
   return Icon ? <Icon className="h-8 w-8 text-primary" /> : null;
 };
 
+// Helper to parse Indonesian month names
+const monthMap: { [key: string]: string } = {
+  'Januari': 'January',
+  'Februari': 'February',
+  'Maret': 'March',
+  'April': 'April',
+  'Mei': 'May',
+  'Juni': 'June',
+  'Juli': 'July',
+  'Agustus': 'August',
+  'September': 'September',
+  'Oktober': 'October',
+  'November': 'November',
+  'Desember': 'December'
+};
+
+const parseDate = (dateStr: string) => {
+  const parts = dateStr.split(' ');
+  if (parts.length === 3) {
+    const day = parts[0];
+    const month = monthMap[parts[1]];
+    const year = parts[2];
+    if (day && month && year) {
+      return new Date(`${month} ${day}, ${year}`);
+    }
+  }
+  return new Date(dateStr); // Fallback for other formats
+};
+
 
 export default function Home() {
   return (
@@ -103,12 +132,14 @@ export default function Home() {
               <Card>
                 <CardContent className="p-6">
                   <ul className="space-y-6">
-                    {eventCalendar.map((event, index) => (
+                    {eventCalendar.map((event, index) => {
+                      const eventDate = parseDate(event.date);
+                      return (
                       <li key={index} className="flex flex-col sm:flex-row items-start gap-4">
                         <div className="flex items-center gap-4">
                             <div className="text-center bg-primary text-primary-foreground rounded-lg px-4 py-2 w-28 shrink-0">
-                                <span className="block text-2xl font-bold">{new Date(event.date).getDate()}</span>
-                                <span className="block text-sm uppercase">{new Date(event.date).toLocaleString('id-ID', { month: 'short' })}</span>
+                                <span className="block text-2xl font-bold">{eventDate.getDate()}</span>
+                                <span className="block text-sm uppercase">{eventDate.toLocaleString('id-ID', { month: 'short' })}</span>
                             </div>
                         </div>
                         <div>
@@ -116,7 +147,7 @@ export default function Home() {
                           <p className="text-muted-foreground text-sm">{event.description}</p>
                         </div>
                       </li>
-                    ))}
+                    )})}
                   </ul>
                 </CardContent>
               </Card>
