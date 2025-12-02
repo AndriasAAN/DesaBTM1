@@ -64,7 +64,12 @@ export const newsArticles = [
     title: 'MUI OKU Safari Sholat Subuh Berjemaah di Masjid Nurul Huda Batumarta 1',
     date: '14 Januari 2024',
     excerpt: 'MUI Kabupaten OKU mengadakan safari sholat subuh berjemaah di Masjid Nurul Huda, Desa Batumarta 1. Kegiatan ini bertujuan untuk mempererat silaturahmi dan meningkatkan keimanan masyarakat.',
-    image: findImage('news-8'),
+    image: {
+      "id": "news-8",
+      "description": "Suasana sholat subuh berjemaah di Masjid Nurul Huda.",
+      "imageUrl": "https://radarpalembang.bacakoran.co/upload/a052d745a48d3f8e4977979c39ae861a.jpg",
+      "imageHint": "congregational prayer"
+    },
   },
   {
     id: '3',
