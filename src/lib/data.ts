@@ -21,7 +21,12 @@ export const newsArticles = [
     title: 'Pengukuhan Pengurus Paguyuban PUJASUMA di Desa Batumarta 1',
     date: '12 Maret 2023',
     excerpt: 'Kegiatan pengukuhan pengurus Paguyuban Keluarga Jawa Sumatera (PUJASUMA) Wali Daerah Kabupaten OKU periode 2023-2028 berlangsung dengan aman dan lancar di Desa Batumarta 1.',
-    image: findImage('news-pujasuma')
+    image: {
+      "id": "news-pujasuma",
+      "description": "Pengukuhan pengurus paguyuban Pujasuma di Desa Batumarta 1.",
+      "imageUrl": "https://resoku.sumsel.polri.go.id/wp-content/uploads/2024/09/WhatsApp-Image-2024-09-13-at-17.41.49-780x470.jpeg",
+      "imageHint": "community gathering"
+    }
   },
   {
     id: '1',
