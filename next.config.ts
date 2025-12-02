@@ -45,6 +45,12 @@ const nextConfig: NextConfig = {
         hostname: 'stasan.okukab.go.id',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'radarpalembang.bacakoran.co',
+        port: '',
+        pathname: '/**',
       }
     ],
   },

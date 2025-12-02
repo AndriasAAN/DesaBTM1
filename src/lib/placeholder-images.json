@@ -13,10 +13,10 @@
       "imageHint": "community work"
     },
     {
-      "id": "news-2",
-      "description": "Petani sedang memanen padi di sawah.",
-      "imageUrl": "https://images.unsplash.com/photo-1599385108614-86b8fce547ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxyaWNlJTIwaGFydmVzdHxlbnwwfHx8fDE3NjQ2NDg2NjN8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "rice harvest"
+      "id": "news-8",
+      "description": "Suasana sholat subuh berjemaah di Masjid Nurul Huda.",
+      "imageUrl": "https://radarpalembang.bacakoran.co/assets/berita/original/71120083991-img_20240114_081258.jpg",
+      "imageHint": "congregational prayer"
     },
     {
       "id": "news-3",
@@ -45,7 +45,7 @@
     {
       "id": "news-7",
       "description": "Seseorang sedang menyajikan data statistik dalam sebuah pertemuan.",
-      "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzdGF0aXN0aWNzfGVufDB8fHx8MTc2NDY1MTgzNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://stasan.okukab.go.id/wp-content/uploads/2021/06/WhatsApp-Image-2021-06-30-at-14.50.03-768x512.jpeg",
       "imageHint": "data presentation"
     },
     {

@@ -60,11 +60,11 @@ export const newsArticles = [
     image: findImage('news-1'),
   },
   {
-    id: '2',
-    title: 'Musim Panen Padi Tiba, Petani Bersemangat',
-    date: '10 Juli 2024',
-    excerpt: 'Musim panen padi tahun ini disambut dengan suka cita oleh para petani di Batumarta 1. Hasil panen yang melimpah diharapkan dapat meningkatkan kesejahteraan.',
-    image: findImage('news-2'),
+    id: '8',
+    title: 'MUI OKU Safari Sholat Subuh Berjemaah di Masjid Nurul Huda Batumarta 1',
+    date: '14 Januari 2024',
+    excerpt: 'MUI Kabupaten OKU mengadakan safari sholat subuh berjemaah di Masjid Nurul Huda, Desa Batumarta 1. Kegiatan ini bertujuan untuk mempererat silaturahmi dan meningkatkan keimanan masyarakat.',
+    image: findImage('news-8'),
   },
   {
     id: '3',
@@ -192,5 +192,3 @@ export const profileData = {
         ]
     }
 }
-
-    
