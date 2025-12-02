@@ -51,6 +51,12 @@ const nextConfig: NextConfig = {
         hostname: 'radarpalembang.bacakoran.co',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'storage.googleapis.com',
+        port: '',
+        pathname: '/**',
       }
     ],
   },
