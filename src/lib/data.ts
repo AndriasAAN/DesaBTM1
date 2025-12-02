@@ -33,14 +33,24 @@ export const newsArticles = [
     title: 'Laga Allstar Persipra FC Lawan Panser FC Berlangsung Seru',
     date: '1 Agustus 2023',
     excerpt: 'Laga persahabatan antara Persipra FC Allstar dan Panser FC berlangsung meriah di lapangan sepak bola Blok D. Pertandingan ini menjadi ajang silaturahmi dan hiburan bagi masyarakat.',
-    image: findImage('news-6'),
+    image: {
+      "id": "news-6",
+      "description": "Pertandingan sepak bola amatir di lapangan desa.",
+      "imageUrl": "https://okes.disway.id/upload/bfe8c5bcdd7755fe9c1403f6e7c0881f.jpg",
+      "imageHint": "soccer match"
+    },
   },
   {
     id: '5',
     title: 'Masyarakat Desa Batumarta I Antusias Ikuti Program Vaksinasi',
     date: '28 Oktober 2021',
     excerpt: 'Tingginya kesadaran masyarakat Desa Batumarta 1 untuk mengikuti vaksinasi Covid-19 terlihat dari antusiasme warga yang datang ke lokasi vaksinasi di balai desa. Program ini merupakan upaya bersama untuk mencapai kekebalan komunal.',
-    image: findImage('news-5'),
+    image: {
+      "id": "news-5",
+      "description": "Tugu selamat datang di Desa Batumarta.",
+      "imageUrl": "https://okes.disway.id/upload/2021/11/ecc1323a-0ce0-4ca0-bbb0-e928e18ad6c9.jpg",
+      "imageHint": "welcome monument"
+    },
   },
   {
     id: '1',
