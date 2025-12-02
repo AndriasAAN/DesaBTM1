@@ -2,9 +2,9 @@
   "placeholderImages": [
     {
       "id": "hero-1",
-      "description": "Pemandangan sawah hijau yang subur di Desa Batumarta.",
-      "imageUrl": "https://images.unsplash.com/photo-1629977681402-c7db16d6c6d1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx2aWxsYWdlJTIwbGFuZHNjYXBlfGVufDB8fHx8MTc2NDU5MDg0OXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "village landscape"
+      "description": "Tugu selamat datang di Desa Batumarta.",
+      "imageUrl": "https://okes.disway.id/upload/2021/11/ecc1323a-0ce0-4ca0-bbb0-e928e18ad6c9.jpg",
+      "imageHint": "welcome monument"
     },
     {
       "id": "news-1",
