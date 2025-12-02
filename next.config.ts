@@ -57,6 +57,12 @@ const nextConfig: NextConfig = {
         hostname: 'storage.googleapis.com',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'resoku.sumsel.polri.go.id',
+        port: '',
+        pathname: '/**',
       }
     ],
   },

@@ -17,6 +17,13 @@ export const navItems = [
 
 export const newsArticles = [
   {
+    id: '9',
+    title: 'Pengukuhan Pengurus Paguyuban PUJASUMA di Desa Batumarta 1',
+    date: '12 Maret 2023',
+    excerpt: 'Kegiatan pengukuhan pengurus Paguyuban Keluarga Jawa Sumatera (PUJASUMA) Wali Daerah Kabupaten OKU periode 2023-2028 berlangsung dengan aman dan lancar di Desa Batumarta 1.',
+    image: findImage('news-pujasuma')
+  },
+  {
     id: '1',
     title: 'PKK Desa Batumarta I Bentuk Class Balita',
     date: '13 Juli 2022',
