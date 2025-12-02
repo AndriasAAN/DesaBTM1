@@ -71,13 +71,6 @@ export const newsArticles = [
       "imageHint": "congregational prayer"
     },
   },
-  {
-    id: '4',
-    title: 'Pembinaan Karang Taruna untuk Generasi Muda Kreatif',
-    date: '1 Juli 2024',
-    excerpt: 'Karang Taruna Desa Batumarta 1 mendapatkan pembinaan untuk mengembangkan potensi dan kreativitas generasi muda dalam berbagai bidang.',
-    image: findImage('news-4'),
-  },
 ];
 
 export const galleryImages = [
