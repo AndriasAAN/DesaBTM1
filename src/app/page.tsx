@@ -2,8 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { newsArticles, publicServices, umkmList, eventCalendar } from "@/lib/data";
-import { ArrowRight, Calendar, Newspaper, Briefcase } from "lucide-react";
+import { newsArticles, publicServices, umkmList, eventCalendar, publicComplaints } from "@/lib/data";
+import { ArrowRight, Calendar, Newspaper, Briefcase, MessageSquareQuote } from "lucide-react";
 import * as Lucide from "lucide-react";
 import { placeholderImages } from "@/lib/placeholder-images.json";
 import {
@@ -13,6 +13,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"
+import { Badge } from "@/components/ui/badge";
 
 const heroImages = [
     placeholderImages.find(img => img.id === 'hero-1'),
@@ -146,6 +147,41 @@ export default function Home() {
               <Button asChild variant="outline" className="text-primary border-primary hover:bg-primary hover:text-primary-foreground">
                 <Link href="/berita">
                   <Newspaper className="mr-2 h-4 w-4" /> Lihat Semua Berita
+                </Link>
+              </Button>
+            </div>
+          </section>
+
+          {/* Aspirasi Warga Section */}
+          <section id="aspirasi" className="mt-20 md:mt-28">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-headline font-semibold text-primary">Aspirasi Warga</h2>
+              <p className="text-muted-foreground mt-2">Suara warga untuk desa yang lebih baik.</p>
+            </div>
+            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+              {publicComplaints.map((complaint, index) => (
+                <Card key={index} className="flex flex-col">
+                  <CardHeader>
+                    <div className="flex items-center gap-4">
+                      <div className="bg-muted rounded-full p-3">
+                          <MessageSquareQuote className="h-6 w-6 text-primary"/>
+                      </div>
+                      <div>
+                        <CardTitle className="text-lg">{complaint.name}</CardTitle>
+                        <CardDescription>{new Date(complaint.date + 'T00:00:00').toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' })}</CardDescription>
+                      </div>
+                    </div>
+                  </CardHeader>
+                  <CardContent className="flex-grow">
+                    <p className="text-muted-foreground italic">"{complaint.message}"</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+             <div className="text-center mt-12">
+              <Button asChild>
+                <Link href="/layanan/pengaduan-masyarakat">
+                  Sampaikan Aspirasi Anda <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
             </div>

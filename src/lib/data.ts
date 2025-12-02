@@ -28,7 +28,7 @@ export const newsArticles = [
       "imageHint": "congregational prayer"
     }
   },
-  {
+    {
     id: '6',
     title: 'Laga Allstar Persipra FC Lawan Panser FC Berlangsung Seru',
     date: '1 Agustus 2023',
@@ -194,6 +194,24 @@ export const profileData = {
             }
         ]
     }
-}
+};
+
+export const publicComplaints = [
+    {
+        name: "Warga RT 01",
+        date: "2024-07-20",
+        message: "Mohon perbaikan lampu jalan di pertigaan utama, sudah beberapa minggu mati dan rawan kecelakaan."
+    },
+    {
+        name: "Warga RT 03",
+        date: "2024-07-18",
+        message: "Saran agar diadakan kembali kerja bakti rutin setiap hari Minggu untuk menjaga kebersihan lingkungan desa."
+    },
+    {
+        name: "Warga RT 02",
+        date: "2024-07-15",
+        message: "Apresiasi untuk pemerintah desa atas cepatnya perbaikan jalan yang rusak akibat hujan deras minggu lalu. Terima kasih!"
+    }
+];
 
     
