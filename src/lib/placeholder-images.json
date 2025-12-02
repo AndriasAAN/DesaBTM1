@@ -13,6 +13,12 @@
       "imageHint": "community work"
     },
     {
+      "id": "news-2",
+      "description": "Anak-anak balita sedang belajar dan bermain di dalam kelas.",
+      "imageUrl": "https://images.unsplash.com/photo-1549499834-11a2f4a1390f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx0b2RkbGVyJTIwY2xhc3Nyb29tfGVufDB8fHx8MTcyMDY1MTE5OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "toddler classroom"
+    },
+    {
       "id": "news-8",
       "description": "Suasana sholat subuh berjemaah di Masjid Nurul Huda.",
       "imageUrl": "https://radarpalembang.bacakoran.co/upload/a052d745a48d3f8e4977979c39ae861a.jpg",
@@ -75,7 +81,7 @@
     {
       "id": "gallery-5",
       "description": "Anak-anak mengikuti lomba 17 Agustus.",
-      "imageUrl": "https://images.unsplash.com/photo-1666967535020-d0ae3bc7ff41?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjaGlsZHJlbiUyMHJhY2V8ZW58MHx8fHwxNzY0NjQ4NjYzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1666967535020-d0ae3bc7ff41?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjaGlsZHJlbiUyMHJhY2V8ZW58MHx8fHwxNzY0NjQ4NjYzfDA&ixlibrb-4.1.0&q=80&w=1080",
       "imageHint": "children race"
     },
     {
@@ -93,43 +99,43 @@
     {
       "id": "gallery-8",
       "description": "Jalanan desa yang asri dengan pepohonan.",
-      "imageUrl": "https://images.unsplash.com/photo-1621856294769-16ad8f3127aa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx2aWxsYWdlJTIwcm9hZHxlbnwwfHx8fDE3NjQ2NDg2NjN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1621856294769-16ad8f3127aa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx2aWxsYWdlJTIwcm9hZHxlbnwwfHx8fDE3NjQ2NDg2NjN8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "village road"
     },
     {
       "id": "gallery-9",
       "description": "Kerajinan tangan buatan warga desa.",
-      "imageUrl": "https://images.unsplash.com/photo-1763393234214-a3128df0acea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxsb2NhbCUyMGhhbmRpY3JhZnR8ZW58MHx8fHwxNzY0NjQ4NjYzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1763393234214-a3128df0acea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxsb2NhbCUyMGhhbmRpY3JhZnR8ZW58MHx8fHwxNzY0NjQ4NjYzfDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "local handicraft"
     },
     {
       "id": "umkm-1",
       "description": "Produk makanan ringan khas desa.",
-      "imageUrl": "https://images.unsplash.com/photo-1591726185073-8a8e17e42e20?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxsb2NhbCUyMGZvb2R8ZW58MHx8fHwxNzY0NjQ4NjYzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1591726185073-8a8e17e42e20?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxsb2NhbCUyMGZvb2R8ZW58MHx8fHwxNzY0NjQ4NjYzfDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "local food"
     },
     {
       "id": "umkm-2",
       "description": "Kerajinan anyaman bambu.",
-      "imageUrl": "https://images.unsplash.com/photo-1757356881834-b9275c4a513f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxiYW1ib28lMjBjcmFmdHxlbnwwfHx8fDE3NjQ2NDgzMzd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1757356881834-b9275c4a513f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxiYW1ib28lMjBjcmFmdHxlbnwwfHx8fDE3NjQ2NDgzMzd8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "bamboo craft"
     },
     {
       "id": "umkm-3",
       "description": "Warung kopi sederhana di pinggir jalan.",
-      "imageUrl": "https://images.unsplash.com/photo-1542372147193-a7aca54189cd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjb2ZmZWUlMjBzaG9wfGVufDB8fHx8MTc2NDU1MjkwMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1542372147193-a7aca54189cd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjb2ZmZWUlMjBzaG9wfGVufDB8fHx8MTc2NDU1MjkwMHww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "coffee shop"
     },
     {
       "id": "profile-history",
       "description": "Sebuah foto arsip bersejarah desa.",
-      "imageUrl": "https://images.unsplash.com/photo-1579856703027-dd3bd29d78b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxoaXN0b3JpY2FsJTIwcGhvdG98ZW58MHx8fHwxNzY0NjQ4NjYzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1579856703027-dd3bd29d78b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxoaXN0b3JpY2FsJTIwcGhvdG98ZW58MHx8fHwxNzY0NjQ4NjYzfDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "historical photo"
     },
     {
       "id": "profile-demography",
       "description": "Keramaian warga desa dalam sebuah acara.",
-      "imageUrl": "https://images.unsplash.com/photo-1729592668320-5d2c845756f8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx2aWxsYWdlJTIwY3Jvd2R8ZW58MHx8fHwxNzY0NjQ4NjYzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1729592668320-5d2c845756f8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx2aWxsYWdlJTIwY3Jvd2R8ZW58MHx8fHwxNzY0NjQ4NjYzfDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "village crowd"
     }
   ]

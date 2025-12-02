@@ -54,10 +54,10 @@ export const newsArticles = [
   },
   {
     id: '1',
-    title: 'Gotong Royong Membersihkan Saluran Irigasi Desa',
-    date: '15 Juli 2024',
-    excerpt: 'Warga Desa Batumarta 1 dengan semangat kebersamaan melaksanakan kegiatan gotong royong untuk membersihkan saluran irigasi yang mengairi sawah-sawah di desa.',
-    image: findImage('news-1'),
+    title: 'PKK Desa Batumarta I Bentuk Class Balita',
+    date: '22 Juli 2024',
+    excerpt: 'PKK Desa Batumarta I membentuk Class Balita untuk memberikan edukasi dini kepada anak-anak, meliputi aspek agama, motorik, dan sensorik, yang disambut positif oleh masyarakat.',
+    image: findImage('news-2'),
   },
   {
     id: '8',
