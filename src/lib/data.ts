@@ -105,15 +105,6 @@ export const newsArticles = [
 ];
 
 export const galleryImages = [
-    findImage('gallery-1'),
-    findImage('gallery-2'),
-    findImage('gallery-3'),
-    findImage('gallery-4'),
-    findImage('gallery-5'),
-    findImage('gallery-6'),
-    findImage('gallery-7'),
-    findImage('gallery-8'),
-    findImage('gallery-9'),
     findImage('gallery-10'),
     findImage('gallery-11'),
 ];
@@ -217,4 +208,5 @@ export const publicComplaints = [
 ];
 
     
+
 

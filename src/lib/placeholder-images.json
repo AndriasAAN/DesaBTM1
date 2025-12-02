@@ -67,60 +67,6 @@
       "imageHint": "data presentation"
     },
     {
-      "id": "gallery-1",
-      "description": "Perayaan hari kemerdekaan dengan panjat pinang.",
-      "imageUrl": "https://images.unsplash.com/photo-1763733594047-d1ab598fb6f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx2aWxsYWdlJTIwZmVzdGl2YWx8ZW58MHx8fHwxNzY0NjAzMTM0fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "village festival"
-    },
-    {
-      "id": "gallery-2",
-      "description": "Ibu-ibu PKK mengadakan demo masak.",
-      "imageUrl": "https://images.unsplash.com/photo-1506368249639-73a05d6f6488?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Y29va2luZyUyMGNsYXNzfGVufDB8fHx8MTc2NDY0ODY2M3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "cooking class"
-    },
-    {
-      "id": "gallery-3",
-      "description": "Pertunjukan seni tari tradisional oleh pemuda desa.",
-      "imageUrl": "https://images.unsplash.com/photo-1666587128445-4623f8f8f033?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0cmFkaXRpb25hbCUyMGRhbmNlfGVufDB8fHx8MTc2NDY0ODY2M3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "traditional dance"
-    },
-    {
-      "id": "gallery-4",
-      "description": "Suasana pasar desa yang ramai.",
-      "imageUrl": "https://images.unsplash.com/photo-1609056615079-1f5f4c909a7f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxsb2NhbCUyMG1hcmtldHxlbnwwfHx8fDE3NjQ1NzczMzV8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "local market"
-    },
-    {
-      "id": "gallery-5",
-      "description": "Anak-anak mengikuti lomba 17 Agustus.",
-      "imageUrl": "https://images.unsplash.com/photo-1666967535020-d0ae8bc7ff41?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjaGlsZHJlbiUyMHJhY2V8ZW58MHx8fHwxNzY0NjQ4NjYzfDA&ixlibrb-4.1.0&q=80&w=1080",
-      "imageHint": "children race"
-    },
-    {
-      "id": "gallery-6",
-      "description": "Pemandangan matahari terbenam di desa.",
-      "imageUrl": "https://images.unsplash.com/photo-1614761064673-d8cb9645e715?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHx2aWxsYWdlJTIwc3Vuc2V0fGVufDB8fHx8MTc2NDY0ODY2M3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "village sunset"
-    },
-    {
-      "id": "gallery-7",
-      "description": "Kegiatan posyandu bulanan untuk balita.",
-      "imageUrl": "https://images.unsplash.com/photo-1615461066159-fea0960485d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxoZWFsdGglMjBjaGVja3VwfGVufDB8fHx8MTc2NDY0ODY2M3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "health checkup"
-    },
-    {
-      "id": "gallery-8",
-      "description": "Jalanan desa yang asri dengan pepohonan.",
-      "imageUrl": "https://images.unsplash.com/photo-1621856294769-16ad8f3127aa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx2aWxsYWdlJTIwcm9hZHxlbnwwfHx8fDE3NjQ2NDg2NjN8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "village road"
-    },
-    {
-      "id": "gallery-9",
-      "description": "Kerajinan tangan buatan warga desa.",
-      "imageUrl": "https://images.unsplash.com/photo-1763393234214-a3128df0acea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxsb2NhbCUyMGhhbmRpY3JhZnR8ZW58MHx8fHwxNzY0NjQ4NjYzfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "local handicraft"
-    },
-    {
       "id": "gallery-10",
       "description": "Pemandangan sawah yang hijau dan subur.",
       "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3IIzcUqvbz9OYOyODQpRZQ1hfT0GhQt-MFg&s",
