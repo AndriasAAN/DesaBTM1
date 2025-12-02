@@ -160,7 +160,7 @@ export const umkmList = [
         name: "Kedai Al Fazza",
         category: "Cafe & Eatery",
         description: "Cafe dan tempat makan yang menyediakan berbagai minuman dan makanan ringan. Tempat yang nyaman untuk bersantai.",
-        contact: "Kontak belum tersedia",
+        contact: "+62 812 7314 9574",
         image: findImage('umkm-4')
     }
 ];
