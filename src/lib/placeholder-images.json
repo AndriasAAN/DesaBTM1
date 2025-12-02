@@ -7,12 +7,6 @@
       "imageHint": "welcome monument"
     },
     {
-      "id": "news-1",
-      "description": "Warga desa bergotong royong membersihkan lingkungan.",
-      "imageUrl": "https://images.unsplash.com/photo-1515187029135-18ee286d815b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjb21tdW5pdHklMjB3b3JrfGVufDB8fHx8MTc2NDY0NjA3Nnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "community work"
-    },
-    {
       "id": "news-2",
       "description": "Anak-anak balita sedang belajar dan bermain di dalam kelas.",
       "imageUrl": "https://images.unsplash.com/photo-1549499834-11a2f4a1390f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx0b2RkbGVyJTIwY2xhc3Nyb29tfGVufDB8fHx8MTcyMDY1MTE5OHww&ixlib=rb-4.1.0&q=80&w=1080",
@@ -105,7 +99,7 @@
     {
       "id": "gallery-9",
       "description": "Kerajinan tangan buatan warga desa.",
-      "imageUrl": "https://images.unsplash.com/photo-1763393234214-a3128df0acea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxsb2NhbCUyMGhhbmRpY3JhZnR8ZW58MHx8fHwxNzY0NjQ4NjYzfDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1763393234214-a3128df0acea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxsb2NhbCUyMGhhbmRpY3JhZnR8ZW58MHx8fHwxNzY0NjQ4NjYzfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "local handicraft"
     },
     {
