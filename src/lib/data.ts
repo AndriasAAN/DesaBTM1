@@ -72,13 +72,6 @@ export const newsArticles = [
     },
   },
   {
-    id: '3',
-    title: 'Rapat Koordinasi Perangkat Desa dan Tokoh Masyarakat',
-    date: '5 Juli 2024',
-    excerpt: 'Pemerintah desa mengadakan rapat koordinasi bersama tokoh masyarakat untuk membahas program pembangunan dan rencana kegiatan desa ke depan.',
-    image: findImage('news-3'),
-  },
-  {
     id: '4',
     title: 'Pembinaan Karang Taruna untuk Generasi Muda Kreatif',
     date: '1 Juli 2024',
