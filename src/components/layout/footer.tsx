@@ -15,7 +15,7 @@ export function Footer() {
                 <Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Logo_OKU_baru.png/250px-Logo_OKU_baru.png" alt="Logo OKU" width={40} height={40} className="h-10 w-10" />
                 <div className="flex flex-col">
                     <span className="whitespace-nowrap text-xl font-bold leading-tight">Desa Batumarta 1</span>
-                    <span className="text-xs text-muted-foreground">Kec. Lubuk Raja, Kab. OKU</span>
+                    <span className="text-xs text-muted-foreground">Kecamatan Lubuk Raja, Kab. OKU</span>
                 </div>
             </Link>
             <p className="mt-2 text-sm text-muted-foreground">

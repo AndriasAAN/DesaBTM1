@@ -15,7 +15,7 @@ export function Header() {
             <Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Logo_OKU_baru.png/250px-Logo_OKU_baru.png" alt="Logo OKU" width={40} height={40} className="h-10 w-10" />
             <div className="flex flex-col">
                 <span className="whitespace-nowrap text-xl font-bold leading-tight">Desa Batumarta 1</span>
-                <span className="text-xs text-muted-foreground hidden sm:block">Kabupaten Ogan Komering Ulu</span>
+                <span className="text-xs text-muted-foreground hidden sm:block">Kecamatan Lubuk Raja, Kabupaten Ogan Komering Ulu</span>
             </div>
         </Link>
         <nav className="ml-auto hidden flex-col gap-6 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6">
