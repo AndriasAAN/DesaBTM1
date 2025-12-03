@@ -28,13 +28,8 @@ type GalleryImage = {
 
 export default function GaleriPage() {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
-  const [galleryImages, setGalleryImages] = useState<GalleryImage[]>([]);
-
-  useEffect(() => {
-    // This effect runs only on the client-side after hydration.
-    // It ensures that the server and client render the same initial content.
-    setGalleryImages(initialGalleryImages);
-  }, []);
+  // Initialize with initial data to prevent hydration mismatch
+  const [galleryImages, setGalleryImages] = useState<GalleryImage[]>(initialGalleryImages);
 
   const openModal = (index: number) => {
     setSelectedIndex(index);
@@ -108,7 +103,7 @@ export default function GaleriPage() {
       ) : (
         <div className="text-center py-16">
           <p className="text-muted-foreground">
-            Memuat galeri...
+            Galeri masih kosong.
           </p>
         </div>
       )}

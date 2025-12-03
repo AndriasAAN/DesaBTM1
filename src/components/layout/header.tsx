@@ -25,10 +25,12 @@ export function Header() {
               href={item.href}
               className={cn(
                 "transition-colors hover:text-primary font-medium",
+                item.name === 'Galeri Kegiatan Desa' && 'hidden', // Hide original gallery link
+                item.name === 'Galeri' && '', // Show new gallery link
                 item.href === "/" && "hidden" // Hide home from main nav
               )}
             >
-              {item.name}
+              {item.name === 'Galeri' ? 'Galeri' : item.name}
             </Link>
           ))}
         </nav>

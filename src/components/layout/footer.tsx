@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin, Facebook, Instagram, Youtube } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -21,6 +21,11 @@ export function Footer() {
             <p className="mt-2 text-sm text-muted-foreground">
               Menuju desa digital yang informatif, transparan, dan melayani masyarakat dengan sepenuh hati.
             </p>
+             <div className="flex space-x-4 mt-4">
+              <Link href="#" className="text-muted-foreground hover:text-primary"><Facebook className="h-5 w-5" /></Link>
+              <Link href="#" className="text-muted-foreground hover:text-primary"><Instagram className="h-5 w-5" /></Link>
+              <Link href="#" className="text-muted-foreground hover:text-primary"><Youtube className="h-5 w-5" /></Link>
+            </div>
           </div>
           <div className="md:col-span-2">
              <h4 className="font-semibold tracking-wide text-primary">Navigasi</h4>
@@ -29,6 +34,8 @@ export function Footer() {
                 <li><Link href="/profil" className="hover:text-primary transition-colors">Profil Desa</Link></li>
                 <li><Link href="/layanan" className="hover:text-primary transition-colors">Layanan</Link></li>
                 <li><Link href="/umkm" className="hover:text-primary transition-colors">UMKM</Link></li>
+                <li><Link href="/galeri" className="hover:text-primary transition-colors">Galeri</Link></li>
+                <li><Link href="/peta" className="hover:text-primary transition-colors">Peta Desa</Link></li>
              </ul>
           </div>
           <div className="md:col-span-3">

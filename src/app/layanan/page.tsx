@@ -34,6 +34,8 @@ export default function LayananPage() {
             serviceUrl = "/layanan/kependudukan";
           } else if (service.title === "Pengaduan Masyarakat") {
             serviceUrl = "/layanan/pengaduan-masyarakat";
+          } else if (service.title === "Peta Digital Desa") {
+            serviceUrl = "/peta";
           }
           return (
             <Card key={service.title} className="flex flex-col text-center items-center hover:shadow-accent/20 hover:shadow-lg transition-shadow duration-300">

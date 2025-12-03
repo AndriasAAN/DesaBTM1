@@ -12,10 +12,18 @@ export const navItems = [
   { name: 'Profil Desa', href: '/profil' },
   { name: 'Layanan', href: '/layanan' },
   { name: 'UMKM', href: '/umkm' },
-  { name: 'Galeri Kegiatan Desa', href: '/galeri' },
+  { name: 'Galeri', href: '/galeri' },
+  { name: 'Peta Desa', href: '/peta' },
 ];
 
 export const newsArticles = [
+  {
+    id: '12',
+    title: 'Warga Gotong Royong Bersihkan Saluran Irigasi Jelang Musim Hujan',
+    date: '10 Oktober 2024',
+    excerpt: 'Mengantisipasi musim hujan, warga Desa Batumarta 1 bahu-membahu membersihkan saluran irigasi utama untuk mencegah terjadinya banjir dan memastikan aliran air ke sawah lancar.',
+    image: findImage('gallery-musyawarah')
+  },
   {
     id: '8',
     title: 'MUI OKU Safari Sholat Subuh Berjemaah di Masjid Nurul Huda Batumarta 1',
@@ -126,6 +134,11 @@ export const publicServices = [
         description: "Saluran untuk menyampaikan aspirasi, keluhan, dan pengaduan terkait pelayanan desa.",
         icon: "Megaphone"
     },
+    {
+        title: "Peta Digital Desa",
+        description: "Peta digital untuk melihat lokasi penting dan direktori UMKM di Desa Batumarta 1.",
+        icon: "Map"
+    }
 ];
 
 export const umkmList = [
@@ -147,20 +160,20 @@ export const umkmList = [
 
 export const eventCalendar = [
     {
+        date: "2024-11-01",
+        title: "Penyuluhan Pertanian Organik",
+        description: "Dinas Pertanian akan mengadakan penyuluhan mengenai teknik pertanian organik untuk meningkatkan hasil panen."
+    },
+    {
+        date: "2024-10-28",
+        title: "Peringatan Hari Sumpah Pemuda",
+        description: "Karang Taruna mengadakan berbagai lomba dan pentas seni untuk memperingati Hari Sumpah Pemuda."
+    },
+    {
         date: "2024-08-17",
         title: "Upacara dan Lomba Kemerdekaan RI",
         description: "Perayaan HUT RI ke-79 di lapangan desa, dimeriahkan dengan berbagai lomba untuk anak-anak dan dewasa."
     },
-    {
-        date: "2024-08-25",
-        title: "Rapat Desa Bulanan",
-        description: "Rapat rutin bulanan pemerintah desa bersama BPD dan LPMD di balai desa."
-    },
-    {
-        date: "2024-09-10",
-        title: "Festival Panen Raya",
-        description: "Syukuran atas hasil panen yang melimpah, diisi dengan pertunjukan seni dan bazar produk pertanian."
-    }
 ];
 
 export const profileData = {

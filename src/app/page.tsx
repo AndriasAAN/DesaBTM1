@@ -6,7 +6,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { newsArticles, publicServices, umkmList, eventCalendar, publicComplaints as initialComplaints } from "@/lib/data";
-import { ArrowRight, Calendar, Newspaper, Briefcase, MessageSquareQuote } from "lucide-react";
+import { ArrowRight, Calendar, Newspaper, Briefcase, MessageSquareQuote, CheckSquare, BarChart3, Info } from "lucide-react";
 import * as Lucide from "lucide-react";
 import { placeholderImages } from "@/lib/placeholder-images.json";
 import {
@@ -18,6 +18,10 @@ import {
 } from "@/components/ui/carousel"
 import { Badge } from "@/components/ui/badge";
 import { useState, useEffect } from "react";
+import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
+import { Label } from "@/components/ui/label";
+import { Progress } from "@/components/ui/progress";
+import { useToast } from "@/hooks/use-toast";
 
 
 const heroImages = [
@@ -34,22 +38,12 @@ const getIcon = (iconName: string) => {
 
 // Helper to parse Indonesian month names
 const monthMap: { [key: string]: string } = {
-  'Januari': 'January',
-  'Februari': 'February',
-  'Maret': 'March',
-  'April': 'April',
-  'Mei': 'May',
-  'Juni': 'June',
-  'Juli': 'July',
-  'Agustus': 'August',
-  'September': 'September',
-  'Oktober': 'October',
-  'November': 'November',
-  'Desember': 'December'
+  'Januari': 'January', 'Februari': 'February', 'Maret': 'March', 'April': 'April',
+  'Mei': 'May', 'Juni': 'June', 'Juli': 'July', 'Agustus': 'August',
+  'September': 'September', 'Oktober': 'October', 'November': 'November', 'Desember': 'December'
 };
 
 const parseDate = (dateStr: string) => {
-  // Handles YYYY-MM-DD format by ensuring it's treated as UTC
   if (/^\d{4}-\d{2}-\d{2}$/.test(dateStr)) {
     return new Date(`${dateStr}T00:00:00`);
   }
@@ -62,7 +56,105 @@ const parseDate = (dateStr: string) => {
       return new Date(`${month} ${day}, ${year}`);
     }
   }
-  return new Date(dateStr); // Fallback for other formats
+  return new Date(dateStr); 
+};
+
+// Polling Component
+const Poll = () => {
+    const { toast } = useToast();
+    const pollId = "desa_maju_poll_1";
+    const [selectedOption, setSelectedOption] = useState<string | null>(null);
+    const [voted, setVoted] = useState(false);
+    const [results, setResults] = useState<{ [key: string]: number }>({
+        infrastruktur: 35,
+        ekonomi: 28,
+        layanan: 22,
+        lingkungan: 15
+    });
+
+    useEffect(() => {
+        const hasVoted = localStorage.getItem(pollId);
+        if (hasVoted) {
+            setVoted(true);
+            const storedResults = localStorage.getItem(`${pollId}_results`);
+            if (storedResults) {
+                setResults(JSON.parse(storedResults));
+            }
+        }
+    }, []);
+
+    const handleVote = () => {
+        if (!selectedOption) {
+            toast({
+                variant: "destructive",
+                title: "Gagal",
+                description: "Silakan pilih salah satu opsi terlebih dahulu.",
+            });
+            return;
+        }
+
+        const newResults = { ...results, [selectedOption]: results[selectedOption] + 1 };
+        setResults(newResults);
+        setVoted(true);
+        localStorage.setItem(pollId, "true");
+        localStorage.setItem(`${pollId}_results`, JSON.stringify(newResults));
+        toast({
+            title: "Terima Kasih!",
+            description: "Suara Anda telah berhasil direkam.",
+        });
+    };
+
+    const totalVotes = Object.values(results).reduce((acc, count) => acc + count, 0);
+
+    const pollOptions = [
+        { id: "infrastruktur", label: "Peningkatan Infrastruktur (Jalan, Jembatan)" },
+        { id: "ekonomi", label: "Pemberdayaan Ekonomi & UMKM" },
+        { id: "layanan", label: "Peningkatan Layanan Publik Digital" },
+        { id: "lingkungan", label: "Program Kebersihan & Keindahan Lingkungan" }
+    ];
+
+    return (
+        <Card>
+            <CardHeader>
+                <CardTitle className="flex items-center gap-2 font-headline text-xl">
+                    <BarChart3 className="text-primary" />
+                    Jajak Pendapat Warga
+                </CardTitle>
+                <CardDescription>Menurut Anda, apa prioritas utama pembangunan desa saat ini?</CardDescription>
+            </CardHeader>
+            <CardContent>
+                {voted ? (
+                    <div className="space-y-4">
+                        <p className="text-sm font-medium text-center text-muted-foreground">Terima kasih telah berpartisipasi! Berikut adalah hasilnya:</p>
+                        {pollOptions.map(option => (
+                            <div key={option.id}>
+                                <div className="flex justify-between mb-1 text-sm">
+                                    <span className="font-medium">{option.label}</span>
+                                    <span className="text-primary font-semibold">{((results[option.id] / totalVotes) * 100).toFixed(1)}%</span>
+                                </div>
+                                <Progress value={(results[option.id] / totalVotes) * 100} className="h-2" />
+                            </div>
+                        ))}
+                    </div>
+                ) : (
+                    <form onSubmit={(e) => { e.preventDefault(); handleVote(); }} className="space-y-6">
+                        <RadioGroup onValueChange={setSelectedOption} className="space-y-3">
+                            {pollOptions.map(option => (
+                                <div key={option.id} className="flex items-center space-x-2">
+                                    <RadioGroupItem value={option.id} id={option.id} />
+                                    <Label htmlFor={option.id}>{option.label}</Label>
+                                </div>
+                            ))}
+                        </RadioGroup>
+                        <Button type="submit" className="w-full">
+                            <CheckSquare className="mr-2 h-4 w-4" />
+                            Kirim Pilihan
+                        </Button>
+                    </form>
+                )}
+            </CardContent>
+        </Card>
+    );
 };
 
 
@@ -75,12 +167,10 @@ export default function Home() {
             if (storedComplaints.length > 0) {
                 setPublicComplaints(storedComplaints);
             } else {
-                // If localStorage is empty but we have initial data, set it in localStorage
                 localStorage.setItem('publicComplaints', JSON.stringify(initialComplaints));
             }
         } catch (error) {
             console.error("Failed to parse complaints from localStorage:", error);
-            // Fallback to initial data if parsing fails
             setPublicComplaints(initialComplaints);
         }
     }, []);
@@ -202,40 +292,48 @@ export default function Home() {
                 </div>
             </section>
 
-          {/* Aspirasi Warga Section */}
-          <section id="aspirasi" className="mt-20 md:mt-28">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-headline font-semibold text-primary">Aspirasi Warga</h2>
-              <p className="text-muted-foreground mt-2">Suara warga untuk desa yang lebih baik.</p>
-            </div>
-            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-              {publicComplaints.slice(0, 3).map((complaint, index) => (
-                <Card key={index} className="flex flex-col">
-                  <CardHeader>
-                    <div className="flex items-center gap-4">
-                      <div className="bg-muted rounded-full p-3">
-                          <MessageSquareQuote className="h-6 w-6 text-primary"/>
-                      </div>
-                      <div>
-                        <CardTitle className="text-lg">{complaint.name}</CardTitle>
-                        <CardDescription>{new Date(complaint.date + 'T00:00:00').toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' })}</CardDescription>
-                      </div>
+          {/* Aspirasi & Polling Section */}
+            <section id="interaktif" className="mt-20 md:mt-28">
+                <div className="grid lg:grid-cols-5 gap-12">
+                    <div className="lg:col-span-3">
+                        <div className="mb-8">
+                            <h2 className="text-3xl font-headline font-semibold text-primary">Aspirasi Warga</h2>
+                            <p className="text-muted-foreground mt-1">Suara warga untuk desa yang lebih baik.</p>
+                        </div>
+                        <div className="space-y-6">
+                            {publicComplaints.slice(0, 2).map((complaint, index) => (
+                                <Card key={index} className="flex flex-col">
+                                    <CardHeader>
+                                        <div className="flex items-center gap-4">
+                                            <div className="bg-muted rounded-full p-3">
+                                                <MessageSquareQuote className="h-6 w-6 text-primary"/>
+                                            </div>
+                                            <div>
+                                                <CardTitle className="text-lg">{complaint.name}</CardTitle>
+                                                <CardDescription>{new Date(complaint.date + 'T00:00:00').toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' })}</CardDescription>
+                                            </div>
+                                        </div>
+                                    </CardHeader>
+                                    <CardContent className="flex-grow">
+                                        <p className="text-muted-foreground italic">"{complaint.message}"</p>
+                                    </CardContent>
+                                </Card>
+                            ))}
+                        </div>
+                        <div className="mt-8">
+                            <Button asChild variant="outline" className="w-full">
+                                <Link href="/layanan/pengaduan-masyarakat">
+                                    Lihat Semua Aspirasi & Sampaikan Masukan Anda <ArrowRight className="ml-2 h-4 w-4" />
+                                </Link>
+                            </Button>
+                        </div>
                     </div>
-                  </CardHeader>
-                  <CardContent className="flex-grow">
-                    <p className="text-muted-foreground italic">"{complaint.message}"</p>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-             <div className="text-center mt-12">
-              <Button asChild>
-                <Link href="/layanan/pengaduan-masyarakat">
-                  Lihat Semua Aspirasi <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
-              </Button>
-            </div>
-          </section>
+                    <div className="lg:col-span-2">
+                        <Poll />
+                    </div>
+                </div>
+            </section>
+          
 
           {/* Kalender Acara */}
           <section id="acara" className="mt-20 md:mt-28 bg-secondary py-20 rounded-lg">
