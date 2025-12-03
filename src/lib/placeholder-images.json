@@ -131,6 +131,12 @@
       "description": "Kegiatan Posyandu Kesehatan Jiwa",
       "imageUrl": "https://scontent.fplm4-1.fna.fbcdn.net/v/t39.30808-6/493003452_2197208504046772_947796173962612525_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEWysFkV2I7TNvSUcE9LniVenj-CHZ-URt6eP4Idn5RGy1dN5yNMYQnoP_HmcTnC40&_nc_ohc=jddmuJBYvLgQ7kNvwFAP74Y&_nc_oc=AdnBO2PBmfVOS1gijEWUXfhCe5m4iLNvZisLOKHKv_EnolnN6N_wyU6dHnFPPxLkVwY&_nc_zt=23&_nc_ht=scontent.fplm4-1.fna&_nc_gid=1Y2VpwGOaC6GvBRydkZGJw&oh=00_AfnrhbrO10ZfSk5sSHt1_gs_XeFxa2KNgq5zCqadmgtoTg&oe=6935A7E6",
       "imageHint": "health activity"
+    },
+    {
+      "id": "gallery-bimtek",
+      "description": "Bimtek Aset Desa",
+      "imageUrl": "https://scontent.fplm4-1.fna.fbcdn.net/v/t39.30808-6/587372944_32622825427363841_3475662749157163504_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFP0Nt9E1k2aU5FJLFV2QoyQeEvXzti3KdB4S9fO2Lcp5-Qr0zxc1SMfF4YyDQxdB8&_nc_ohc=Baj-6xJEyh8Q7kNvwF_v_18&_nc_oc=AdlmOJtlOiMUo_FcUnDB60joJvHnKRXqgB8dZqyaDW2zqnAR73PcmjgbDLjDi8srVw4&_nc_zt=23&_nc_ht=scontent.fplm4-1.fna&_nc_gid=3O3vdKMC5goiJ-Os6oBO4w&oh=00_Afml3sdFErXUMDXDZbyryQBD-82iB3UihJANtDCrTKDncQ&oe=6935A88C",
+      "imageHint": "village meeting"
     }
   ]
 }
