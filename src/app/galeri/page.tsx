@@ -1,8 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
-import { galleryImages } from "@/lib/data";
+import { galleryImages as initialGalleryImages } from "@/lib/data";
 import {
   Card,
   CardContent,
@@ -28,6 +28,15 @@ type GalleryImage = {
 
 export default function GaleriPage() {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
+  const [galleryImages, setGalleryImages] = useState<GalleryImage[]>(initialGalleryImages);
+  
+  useEffect(() => {
+    // This logic is moved inside useEffect to prevent hydration errors.
+    // It ensures that localStorage, which is a browser-only API,
+    // is accessed only on the client side after the initial render.
+    const imagesFromData = initialGalleryImages; // Use the imported data as the base
+    setGalleryImages(imagesFromData);
+  }, []);
 
   const openModal = (index: number) => {
     setSelectedIndex(index);
@@ -71,7 +80,7 @@ export default function GaleriPage() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {galleryImages.map((image, index) => (
             <Card
-              key={index}
+              key={image.id}
               className="overflow-hidden group transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
             >
               <CardContent className="p-0">
