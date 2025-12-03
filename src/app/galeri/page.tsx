@@ -16,7 +16,8 @@ import {
   DialogClose,
   DialogTitle,
 } from "@/components/ui/dialog";
-import { X } from "lucide-react";
+import { X, ChevronLeft, ChevronRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 type GalleryImage = {
   id: string;
@@ -26,15 +27,33 @@ type GalleryImage = {
 };
 
 export default function GaleriPage() {
-  const [selectedImage, setSelectedImage] = useState<GalleryImage | null>(null);
+  const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
 
-  const openModal = (image: GalleryImage) => {
-    setSelectedImage(image);
+  const openModal = (index: number) => {
+    setSelectedIndex(index);
   };
 
   const closeModal = () => {
-    setSelectedImage(null);
+    setSelectedIndex(null);
   };
+
+  const handleNext = () => {
+    if (selectedIndex !== null) {
+      setSelectedIndex((prevIndex) =>
+        prevIndex === null ? 0 : (prevIndex + 1) % galleryImages.length
+      );
+    }
+  };
+
+  const handlePrevious = () => {
+    if (selectedIndex !== null) {
+      setSelectedIndex((prevIndex) =>
+        prevIndex === null ? 0 : (prevIndex - 1 + galleryImages.length) % galleryImages.length
+      );
+    }
+  };
+  
+  const selectedImage = selectedIndex !== null ? galleryImages[selectedIndex] : null;
 
   return (
     <div className="container mx-auto px-4 md:px-6 py-12 md:py-20">
@@ -57,7 +76,7 @@ export default function GaleriPage() {
             >
               <CardContent className="p-0">
                 <button
-                  onClick={() => openModal(image)}
+                  onClick={() => openModal(index)}
                   className="relative aspect-video w-full block"
                   aria-label={`Lihat gambar ${image.description} lebih besar`}
                 >
@@ -88,11 +107,11 @@ export default function GaleriPage() {
       )}
 
       {selectedImage && (
-        <Dialog open={!!selectedImage} onOpenChange={closeModal}>
+        <Dialog open={selectedIndex !== null} onOpenChange={(isOpen) => !isOpen && closeModal()}>
           <DialogOverlay className="bg-black/80" />
-          <DialogContent className="max-w-4xl w-full p-2 bg-transparent border-0 shadow-none">
+          <DialogContent className="max-w-5xl w-full p-2 bg-transparent border-0 shadow-none flex items-center justify-center">
              <DialogTitle className="sr-only">{selectedImage.description}</DialogTitle>
-            <div className="relative aspect-video">
+            <div className="relative aspect-video w-full max-w-4xl">
               <Image
                 src={selectedImage.imageUrl}
                 alt={selectedImage.description}
@@ -101,18 +120,36 @@ export default function GaleriPage() {
                 data-ai-hint={selectedImage.imageHint}
               />
             </div>
-            <p className="text-center text-white mt-2 bg-black/50 p-2 rounded-b-lg">
+            <p className="absolute bottom-4 left-1/2 -translate-x-1/2 text-center text-white mt-2 bg-black/50 p-2 rounded-lg text-sm">
               {selectedImage.description}
             </p>
              <DialogClose asChild>
                 <button 
                   onClick={closeModal}
-                  className="absolute -top-10 right-0 rounded-full p-1 bg-white/20 text-white hover:bg-white/40 transition-colors"
+                  className="absolute -top-2 -right-2 md:top-0 md:right-0 rounded-full p-1 bg-white/20 text-white hover:bg-white/40 transition-colors"
                   aria-label="Tutup"
                 >
                   <X className="h-6 w-6" />
                 </button>
             </DialogClose>
+             <Button
+                variant="ghost"
+                size="icon"
+                onClick={handlePrevious}
+                className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 rounded-full h-10 w-10 bg-white/20 text-white hover:bg-white/40"
+                aria-label="Gambar sebelumnya"
+              >
+                <ChevronLeft className="h-8 w-8" />
+              </Button>
+              <Button
+                variant="ghost"
+                size="icon"
+                onClick={handleNext}
+                className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 rounded-full h-10 w-10 bg-white/20 text-white hover:bg-white/40"
+                aria-label="Gambar berikutnya"
+              >
+                <ChevronRight className="h-8 w-8" />
+              </Button>
           </DialogContent>
         </Dialog>
       )}
