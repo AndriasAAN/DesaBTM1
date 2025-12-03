@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 import { galleryImages } from "@/lib/data";
 import {
@@ -6,13 +9,32 @@ import {
   CardDescription,
   CardFooter,
 } from "@/components/ui/card";
+import {
+  Dialog,
+  DialogContent,
+  DialogOverlay,
+  DialogClose,
+} from "@/components/ui/dialog";
+import { X } from "lucide-react";
 
-export const metadata = {
-  title: "Galeri Kegiatan Desa - Website Desa Batumarta 1",
-  description: "Dokumentasi foto berbagai kegiatan yang diadakan di Desa Batumarta 1.",
+type GalleryImage = {
+  id: string;
+  imageUrl: string;
+  description: string;
+  imageHint: string;
 };
 
 export default function GaleriPage() {
+  const [selectedImage, setSelectedImage] = useState<GalleryImage | null>(null);
+
+  const openModal = (image: GalleryImage) => {
+    setSelectedImage(image);
+  };
+
+  const closeModal = () => {
+    setSelectedImage(null);
+  };
+
   return (
     <div className="container mx-auto px-4 md:px-6 py-12 md:py-20">
       <div className="text-center mb-12">
@@ -33,7 +55,11 @@ export default function GaleriPage() {
               className="overflow-hidden group transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
             >
               <CardContent className="p-0">
-                <div className="relative aspect-video w-full">
+                <button
+                  onClick={() => openModal(image)}
+                  className="relative aspect-video w-full block"
+                  aria-label={`Lihat gambar ${image.description} lebih besar`}
+                >
                   <Image
                     src={image.imageUrl}
                     alt={image.description}
@@ -42,7 +68,7 @@ export default function GaleriPage() {
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     data-ai-hint={image.imageHint}
                   />
-                </div>
+                </button>
               </CardContent>
               <CardFooter className="p-4">
                 <CardDescription className="text-sm">
@@ -58,6 +84,34 @@ export default function GaleriPage() {
             Saat ini belum ada foto di galeri.
           </p>
         </div>
+      )}
+
+      {selectedImage && (
+        <Dialog open={!!selectedImage} onOpenChange={closeModal}>
+          <DialogOverlay className="bg-black/80" />
+          <DialogContent className="max-w-4xl w-full p-2 bg-transparent border-0 shadow-none">
+            <div className="relative aspect-video">
+              <Image
+                src={selectedImage.imageUrl}
+                alt={selectedImage.description}
+                fill
+                className="object-contain"
+              />
+            </div>
+            <p className="text-center text-white mt-2 bg-black/50 p-2 rounded-b-lg">
+              {selectedImage.description}
+            </p>
+             <DialogClose asChild>
+                <button 
+                  onClick={closeModal}
+                  className="absolute -top-10 right-0 rounded-full p-1 bg-white/20 text-white hover:bg-white/40 transition-colors"
+                  aria-label="Tutup"
+                >
+                  <X className="h-6 w-6" />
+                </button>
+            </DialogClose>
+          </DialogContent>
+        </Dialog>
       )}
     </div>
   );
