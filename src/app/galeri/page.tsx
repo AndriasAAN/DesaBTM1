@@ -14,6 +14,7 @@ import {
   DialogContent,
   DialogOverlay,
   DialogClose,
+  DialogTitle,
 } from "@/components/ui/dialog";
 import { X } from "lucide-react";
 
@@ -90,12 +91,14 @@ export default function GaleriPage() {
         <Dialog open={!!selectedImage} onOpenChange={closeModal}>
           <DialogOverlay className="bg-black/80" />
           <DialogContent className="max-w-4xl w-full p-2 bg-transparent border-0 shadow-none">
+             <DialogTitle className="sr-only">{selectedImage.description}</DialogTitle>
             <div className="relative aspect-video">
               <Image
                 src={selectedImage.imageUrl}
                 alt={selectedImage.description}
                 fill
                 className="object-contain"
+                data-ai-hint={selectedImage.imageHint}
               />
             </div>
             <p className="text-center text-white mt-2 bg-black/50 p-2 rounded-b-lg">
