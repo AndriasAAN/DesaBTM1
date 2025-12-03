@@ -10,7 +10,6 @@ export const navItems = [
   { name: 'Beranda', href: '/' },
   { name: 'Berita', href: '/berita' },
   { name: 'Profil Desa', href: '/profil' },
-  { name: 'Galeri', href: '/galeri' },
   { name: 'Layanan', href: '/layanan' },
   { name: 'UMKM', href: '/umkm' },
 ];
