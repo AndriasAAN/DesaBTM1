@@ -85,6 +85,9 @@ export default function Home() {
         }
     }, []);
 
+    const mainArticle = newsArticles[0];
+    const sideArticles = newsArticles.slice(1, 3);
+
   return (
     <div className="flex flex-col min-h-screen">
       <main className="flex-grow">
@@ -132,48 +135,72 @@ export default function Home() {
         <div className="container mx-auto px-4 md:px-6 py-12 md:py-20">
           
           {/* Berita Terbaru */}
-          <section id="berita">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-headline font-semibold text-primary">Berita Terbaru</h2>
-              <p className="text-muted-foreground mt-2">Ikuti perkembangan dan informasi terkini dari desa kami.</p>
-            </div>
-            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-              {newsArticles.slice(0, 3).map((article) => (
-                <Card key={article.id} className="overflow-hidden flex flex-col group border rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-                  <Link href={`/berita/${article.id}`} className="block">
-                    <div className="relative h-56 w-full">
-                      <Image
-                        src={article.image.imageUrl}
-                        alt={article.image.description}
-                        fill
-                        className="object-cover transition-transform duration-300 group-hover:scale-105"
-                        data-ai-hint={article.image.imageHint}
-                      />
+            <section id="berita">
+                <div className="mb-8">
+                    <h2 className="text-3xl md:text-4xl font-headline font-semibold text-primary border-b-4 border-primary pb-2 inline-block">Berita Utama</h2>
+                </div>
+                <div className="grid lg:grid-cols-2 gap-8">
+                    {/* Main Article */}
+                    <Card className="overflow-hidden flex flex-col group border rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 lg:col-span-1">
+                        <Link href={`/berita/${mainArticle.id}`} className="block">
+                            <div className="relative h-96 w-full">
+                                <Image
+                                    src={mainArticle.image.imageUrl}
+                                    alt={mainArticle.image.description}
+                                    fill
+                                    className="object-cover transition-transform duration-300 group-hover:scale-105"
+                                    data-ai-hint={mainArticle.image.imageHint}
+                                />
+                            </div>
+                        </Link>
+                        <CardHeader>
+                            <Link href={`/berita/${mainArticle.id}`} className="hover:text-primary">
+                                <CardTitle className="font-headline text-2xl leading-tight">{mainArticle.title}</CardTitle>
+                            </Link>
+                            <CardDescription className="flex items-center text-sm pt-2">
+                                <Calendar className="h-4 w-4 mr-2" />
+                                {mainArticle.date}
+                            </CardDescription>
+                        </CardHeader>
+                        <CardContent className="flex-grow">
+                            <p className="text-muted-foreground line-clamp-3">{mainArticle.excerpt}</p>
+                        </CardContent>
+                    </Card>
+
+                    {/* Side Articles */}
+                    <div className="space-y-6">
+                        {sideArticles.map((article) => (
+                           <Card key={article.id} className="overflow-hidden group border rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+                               <Link href={`/berita/${article.id}`} className="block">
+                                   <div className="flex flex-col sm:flex-row">
+                                       <div className="relative h-48 sm:h-auto sm:w-1/3 flex-shrink-0">
+                                           <Image
+                                               src={article.image.imageUrl}
+                                               alt={article.image.description}
+                                               fill
+                                               className="object-cover"
+                                               data-ai-hint={article.image.imageHint}
+                                           />
+                                       </div>
+                                       <div className="p-4">
+                                           <h3 className="font-headline text-lg font-semibold leading-tight group-hover:text-primary">{article.title}</h3>
+                                           <p className="text-xs text-muted-foreground mt-1">{article.date}</p>
+                                           <p className="text-sm text-muted-foreground mt-2 line-clamp-2">{article.excerpt}</p>
+                                       </div>
+                                   </div>
+                               </Link>
+                           </Card>
+                        ))}
                     </div>
-                  </Link>
-                  <CardHeader>
-                    <Link href={`/berita/${article.id}`} className="hover:text-primary">
-                      <CardTitle className="font-headline text-xl leading-tight h-14">{article.title}</CardTitle>
-                    </Link>
-                    <CardDescription className="flex items-center text-sm pt-2">
-                        <Calendar className="h-4 w-4 mr-2" />
-                        {article.date}
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent className="flex-grow">
-                    <p className="text-muted-foreground line-clamp-3">{article.excerpt}</p>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-            <div className="text-center mt-12">
-              <Button asChild variant="outline" className="text-primary border-primary hover:bg-primary hover:text-primary-foreground">
-                <Link href="/berita">
-                  <Newspaper className="mr-2 h-4 w-4" /> Lihat Semua Berita
-                </Link>
-              </Button>
-            </div>
-          </section>
+                </div>
+                <div className="text-center mt-12">
+                    <Button asChild className="bg-primary text-primary-foreground hover:bg-primary/90">
+                        <Link href="/berita">
+                            <Newspaper className="mr-2 h-4 w-4" /> Lihat Semua Berita
+                        </Link>
+                    </Button>
+                </div>
+            </section>
 
           {/* Aspirasi Warga Section */}
           <section id="aspirasi" className="mt-20 md:mt-28">
