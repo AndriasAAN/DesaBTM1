@@ -100,6 +100,7 @@ export const newsArticles = [
 ];
 
 export const galleryImages = [
+    findImage('news-stadion'),
     findImage('gallery-10'),
     findImage('gallery-11'),
     findImage('gallery-12'),
