@@ -209,7 +209,7 @@ export default function Home() {
               <p className="text-muted-foreground mt-2">Suara warga untuk desa yang lebih baik.</p>
             </div>
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-              {publicComplaints.map((complaint, index) => (
+              {publicComplaints.slice(0, 3).map((complaint, index) => (
                 <Card key={index} className="flex flex-col">
                   <CardHeader>
                     <div className="flex items-center gap-4">
@@ -231,7 +231,7 @@ export default function Home() {
              <div className="text-center mt-12">
               <Button asChild>
                 <Link href="/layanan/pengaduan-masyarakat">
-                  Sampaikan Aspirasi Anda <ArrowRight className="ml-2 h-4 w-4" />
+                  Lihat Semua Aspirasi <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
             </div>
