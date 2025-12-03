@@ -17,23 +17,31 @@ export default function GaleriPage() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-        {galleryImages.map((image, index) => (
-          <div key={index} className="group relative overflow-hidden rounded-lg">
-            <Image
-              src={image.imageUrl}
-              alt={image.description}
-              width={600}
-              height={400}
-              className="h-full w-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"
-              data-ai-hint={image.imageHint}
-            />
-            <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
-              <p className="text-white text-sm drop-shadow-md">{image.description}</p>
+      {galleryImages.length > 0 ? (
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          {galleryImages.map((image, index) => (
+            <div key={index} className="group relative overflow-hidden rounded-lg">
+              <Image
+                src={image.imageUrl}
+                alt={image.description}
+                width={600}
+                height={400}
+                className="h-full w-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"
+                data-ai-hint={image.imageHint}
+              />
+              <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                <p className="text-white text-sm drop-shadow-md">{image.description}</p>
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
+      ) : (
+        <div className="text-center py-16">
+          <p className="text-muted-foreground">Saat ini belum ada foto di galeri.</p>
+        </div>
+      )}
     </div>
   );
 }
+
+    
