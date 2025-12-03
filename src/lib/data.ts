@@ -99,9 +99,7 @@ export const newsArticles = [
   },
 ];
 
-export const galleryImages = [
-    findImage('gallery-16'),
-];
+export const galleryImages = [];
 
 export const publicServices = [
     {
