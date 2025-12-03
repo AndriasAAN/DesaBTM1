@@ -28,11 +28,11 @@ type GalleryImage = {
 
 export default function GaleriPage() {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
-  const [galleryImages, setGalleryImages] = useState<GalleryImage[]>(initialGalleryImages);
-  
+  const [galleryImages, setGalleryImages] = useState<GalleryImage[]>([]);
+
   useEffect(() => {
-    // This effect can be used to load dynamic data from localStorage
-    // For now, we ensure the initial state is consistent.
+    // This effect runs only on the client-side after hydration.
+    // It ensures that the server and client render the same initial content.
     setGalleryImages(initialGalleryImages);
   }, []);
 
@@ -108,7 +108,7 @@ export default function GaleriPage() {
       ) : (
         <div className="text-center py-16">
           <p className="text-muted-foreground">
-            Saat ini belum ada foto di galeri.
+            Memuat galeri...
           </p>
         </div>
       )}

@@ -101,12 +101,12 @@ export const newsArticles = [
 
 export const galleryImages = [
     findImage('gallery-bimtek-narkoba'),
+    findImage('gallery-pembangunan-jalan'),
+    findImage('gallery-bantuan-hamil'),
+    findImage('gallery-linmas'),
+    findImage('gallery-musyawarah'),
     findImage('gallery-bimtek'),
     findImage('gallery-posyandu'),
-    findImage('gallery-musyawarah'),
-    findImage('gallery-linmas'),
-    findImage('gallery-bantuan-hamil'),
-    findImage('gallery-pembangunan-jalan'),
 ];
 
 export const publicServices = [
