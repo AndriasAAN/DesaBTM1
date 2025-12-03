@@ -104,6 +104,7 @@ export const galleryImages = [
     findImage('gallery-posyandu'),
     findImage('gallery-musyawarah'),
     findImage('gallery-linmas'),
+    findImage('gallery-bantuan-hamil'),
 ];
 
 export const publicServices = [
@@ -227,4 +228,5 @@ export const publicComplaints = [
 
     
 
+    
     
