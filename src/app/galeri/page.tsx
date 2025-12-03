@@ -31,11 +31,9 @@ export default function GaleriPage() {
   const [galleryImages, setGalleryImages] = useState<GalleryImage[]>(initialGalleryImages);
   
   useEffect(() => {
-    // This logic is moved inside useEffect to prevent hydration errors.
-    // It ensures that localStorage, which is a browser-only API,
-    // is accessed only on the client side after the initial render.
-    const imagesFromData = initialGalleryImages; // Use the imported data as the base
-    setGalleryImages(imagesFromData);
+    // This effect can be used to load dynamic data from localStorage
+    // For now, we ensure the initial state is consistent.
+    setGalleryImages(initialGalleryImages);
   }, []);
 
   const openModal = (index: number) => {
