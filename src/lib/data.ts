@@ -103,6 +103,7 @@ export const galleryImages = [
     findImage('gallery-bimtek'),
     findImage('gallery-posyandu'),
     findImage('gallery-musyawarah'),
+    findImage('gallery-linmas'),
 ];
 
 export const publicServices = [
@@ -222,6 +223,8 @@ export const publicComplaints = [
 
     
     
+    
+
     
 
     
