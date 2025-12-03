@@ -107,6 +107,7 @@ export const galleryImages = [
     findImage('gallery-musyawarah'),
     findImage('gallery-bimtek'),
     findImage('gallery-posyandu'),
+    findImage('gallery-kades-cup'),
 ];
 
 export const publicServices = [
