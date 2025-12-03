@@ -12,6 +12,7 @@ export const navItems = [
   { name: 'Profil Desa', href: '/profil' },
   { name: 'Layanan', href: '/layanan' },
   { name: 'UMKM', href: '/umkm' },
+  { name: 'Galeri Kegiatan Desa', href: '/galeri' },
 ];
 
 export const newsArticles = [
