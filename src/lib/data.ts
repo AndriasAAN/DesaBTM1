@@ -100,6 +100,7 @@ export const newsArticles = [
 ];
 
 export const galleryImages = [
+    findImage('gallery-kades-cup'),
     findImage('gallery-bimtek-narkoba'),
     findImage('gallery-pembangunan-jalan'),
     findImage('gallery-bantuan-hamil'),
@@ -107,7 +108,6 @@ export const galleryImages = [
     findImage('gallery-musyawarah'),
     findImage('gallery-bimtek'),
     findImage('gallery-posyandu'),
-    findImage('gallery-kades-cup'),
 ];
 
 export const publicServices = [
@@ -135,6 +135,13 @@ export const umkmList = [
         description: "Cafe dan tempat makan yang menyediakan berbagai minuman dan makanan ringan. Tempat yang nyaman untuk bersantai.",
         contact: "+62 812 7314 9574",
         image: findImage('umkm-4')
+    },
+    {
+        name: "Ketahanan Pangan Desa Batumarta 1",
+        category: "Peternakan",
+        description: "Program ketahanan pangan di bidang Peternakan Kambing untuk meningkatkan kemandirian dan perekonomian warga.",
+        contact: "-",
+        image: findImage('umkm-kambing')
     }
 ];
 
