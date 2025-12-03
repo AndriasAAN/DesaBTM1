@@ -99,7 +99,9 @@ export const newsArticles = [
   },
 ];
 
-export const galleryImages = [];
+export const galleryImages = [
+    findImage('gallery-posyandu'),
+];
 
 export const publicServices = [
     {
@@ -209,6 +211,8 @@ export const publicComplaints = [
 
 
 
+
+    
 
     
 
