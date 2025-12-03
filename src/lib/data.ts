@@ -100,6 +100,7 @@ export const newsArticles = [
 ];
 
 export const galleryImages = [
+    findImage('gallery-bimtek-narkoba'),
     findImage('gallery-bimtek'),
     findImage('gallery-posyandu'),
     findImage('gallery-musyawarah'),
@@ -232,4 +233,5 @@ export const publicComplaints = [
     
     
 
+    
     
