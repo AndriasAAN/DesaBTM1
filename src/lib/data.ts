@@ -19,9 +19,9 @@ export const navItems = [
 export const newsArticles = [
   {
     id: '12',
-    title: 'Warga Gotong Royong Bersihkan Saluran Irigasi Jelang Musim Hujan',
+    title: 'Perangkat Desa Adakan Musyawarah Rutin Bahas Kemajuan Desa',
     date: '10 Oktober 2024',
-    excerpt: 'Mengantisipasi musim hujan, warga Desa Batumarta 1 bahu-membahu membersihkan saluran irigasi utama untuk mencegah terjadinya banjir dan memastikan aliran air ke sawah lancar.',
+    excerpt: 'Seluruh jajaran perangkat Desa Batumarta 1 menggelar musyawarah rutin untuk mengevaluasi program kerja yang telah berjalan dan merencanakan strategi pembangunan selanjutnya demi kemajuan bersama.',
     image: findImage('gallery-musyawarah')
   },
   {
