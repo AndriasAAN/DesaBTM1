@@ -220,8 +220,8 @@ export const publicComplaints = [
     }
 ];
 
-const balaiDesaLat = -4.0980556;
-const balaiDesaLng = 104.1802778;
+const balaiDesaLat = -4.2043579;
+const balaiDesaLng = 104.2741977;
 
 export const mapLocations = [
     { id: "balai_desa", name: "Kantor Kepala Desa Batumarta 1", lat: balaiDesaLat, lng: balaiDesaLng, type: "pemerintahan" },
