@@ -28,8 +28,6 @@ export default function BeritaDetailPage({ params }: { params: { id: string } })
     notFound();
   }
 
-  const fullContent = article.excerpt;
-
   return (
     <div className="container mx-auto px-4 md:px-6 py-12 md:py-20">
       <article className="max-w-4xl mx-auto">
@@ -60,8 +58,8 @@ export default function BeritaDetailPage({ params }: { params: { id: string } })
           />
         </div>
 
-        <div className="prose prose-lg max-w-none mx-auto text-foreground/80 leading-relaxed">
-            <p>{fullContent}</p>
+        <div className="prose prose-lg max-w-none mx-auto text-foreground/80 leading-relaxed whitespace-pre-wrap">
+            <p>{article.fullContent}</p>
         </div>
       </article>
     </div>
