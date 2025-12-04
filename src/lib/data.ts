@@ -38,12 +38,7 @@ export const newsArticles = [
     title: 'MUI OKU Safari Sholat Subuh Berjemaah di Masjid Nurul Huda Batumarta 1',
     date: '14 Januari 2024',
     excerpt: 'MUI Kabupaten OKU mengadakan safari sholat subuh berjemaah di Masjid Nurul Huda, Desa Batumarta 1. Kegiatan ini bertujuan untuk mempererat silaturahmi dan meningkatkan keimanan masyarakat.',
-    image: {
-      "id": "news-8",
-      "description": "Suasana sholat subuh berjemaah di Masjid Nurul Huda.",
-      "imageUrl": "https://radarpalembang.bacakoran.co/upload/a052d745a48d3f8e4977979c39ae861a.jpg",
-      "imageHint": "congregational prayer"
-    },
+    image: findImage('news-8'),
     fullContent: `Dalam upaya mempererat ukhuwah Islamiyah dan meningkatkan syiar agama, Majelis Ulama Indonesia (MUI) Kabupaten Ogan Komering Ulu (OKU) menggelar program Safari Subuh di Masjid Nurul Huda, Desa Batumarta 1. Ratusan warga dari berbagai kalangan tumpah ruah memenuhi masjid untuk melaksanakan sholat Subuh berjemaah bersama para ulama dan tokoh masyarakat.\n\nKegiatan yang diinisiasi oleh MUI OKU ini tidak hanya bertujuan untuk memakmurkan masjid, tetapi juga menjadi sarana silaturahmi antara ulama, umara (pemerintah), dan umat. Usai sholat, acara dilanjutkan dengan tausiyah yang menyejukkan hati, membahas pentingnya menjaga persatuan dan meningkatkan kualitas iman di tengah tantangan zaman.\n\nKetua MUI OKU dalam ceramahnya menyampaikan apresiasi atas antusiasme warga Batumarta 1. "Semangat sholat Subuh berjemaah seperti ini adalah cerminan dari masyarakat yang religius dan peduli. Ini adalah modal sosial yang sangat kuat untuk membangun desa yang tidak hanya maju secara fisik, tetapi juga kokoh secara spiritual," tuturnya.\n\nPemerintah Desa Batumarta 1 menyambut baik kegiatan ini dan berharap dapat menjadi agenda rutin. Kepala Desa menyatakan, "Kami sangat berterima kasih atas kunjungan dari MUI OKU. Momen seperti ini sangat berarti untuk memperkuat kebersamaan dan memberikan pencerahan rohani bagi warga kami."`
   },
     {
@@ -51,12 +46,7 @@ export const newsArticles = [
     title: 'Laga Allstar Persipra FC Lawan Panser FC Berlangsung Seru',
     date: '1 Agustus 2023',
     excerpt: 'Laga persahabatan antara Persipra FC Allstar dan Panser FC berlangsung meriah di lapangan sepak bola Blok D. Pertandingan ini menjadi ajang silaturahmi dan hiburan bagi masyarakat.',
-    image: {
-      "id": "news-6",
-      "description": "Pertandingan sepak bola amatir di lapangan desa.",
-      "imageUrl": "https://okes.disway.id/upload/bfe8c5bcdd7755fe9c1403f6e7c0881f.jpg",
-      "imageHint": "soccer match"
-    },
+    image: findImage('news-6'),
     fullContent: `Sore yang cerah di Lapangan Sepak Bola Blok D, Desa Batumarta 1, menjadi saksi bisu keseruan laga persahabatan antara tim legendaris lokal, Persipra FC Allstar, melawan Panser FC. Ratusan penonton dari berbagai usia memadati tribun dan pinggir lapangan, memberikan dukungan penuh kepada kedua tim.\n\nPertandingan ini bukan sekadar adu strategi di atas lapangan hijau, melainkan sebuah ajang reuni dan silaturahmi antar generasi pemain sepak bola di desa. Para pemain Allstar, yang pernah menjadi idola di masanya, menunjukkan bahwa skill mereka belum luntur, sementara para pemain Panser FC yang lebih muda memberikan perlawanan sengit dengan kecepatan dan stamina mereka.\n\nJual beli serangan terjadi sepanjang pertandingan. Sorak sorai penonton membahana setiap kali peluang emas tercipta atau saat kiper melakukan penyelamatan gemilang. Meskipun bertajuk laga persahabatan, semangat kompetisi tetap terasa kental, namun tetap dalam balutan sportivitas yang tinggi.\n\n"Kami sangat senang bisa mengadakan acara seperti ini. Ini bukan tentang siapa yang menang atau kalah, tapi tentang merayakan kebersamaan melalui olahraga. Melihat para senior kembali bermain dan berinteraksi dengan para junior adalah pemandangan yang luar biasa," ujar salah satu panitia dari Karang Taruna. Laga ini diharapkan dapat memotivasi generasi muda untuk terus aktif berolahraga dan menjaga semangat persatuan di desa.`
   },
   {
@@ -64,12 +54,7 @@ export const newsArticles = [
     title: 'Pengukuhan Pengurus Paguyuban PUJASUMA di Desa Batumarta 1',
     date: '12 Maret 2023',
     excerpt: 'Kegiatan pengukuhan pengurus Paguyuban Keluarga Jawa Sumatera (PUJASUMA) Wali Daerah Kabupaten OKU periode 2023-2028 berlangsung dengan aman dan lancar di Desa Batumarta 1.',
-    image: {
-      "id": "news-pujasuma",
-      "description": "Pengukuhan pengurus paguyuban Pujasuma di Desa Batumarta 1.",
-      "imageUrl": "https://resoku.sumsel.polri.go.id/wp-content/uploads/2024/09/WhatsApp-Image-2024-09-13-at-17.41.49-780x470.jpeg",
-      "imageHint": "community gathering"
-    },
+    image: findImage('news-pujasuma-2'),
     fullContent: `Suasana khidmat dan penuh kebersamaan menyelimuti Desa Batumarta 1 saat menjadi tuan rumah acara pengukuhan pengurus Paguyuban Keluarga Besar Putra Jawa Sumatera (PUJASUMA) Wali Daerah Kabupaten Ogan Komering Ulu (OKU) untuk masa bakti 2023-2028. Acara ini dihadiri oleh ratusan anggota paguyuban dari berbagai kecamatan di OKU, serta tokoh masyarakat dan perwakilan pemerintah setempat.\n\nPengukuhan ini menandai lahirnya kepemimpinan baru yang siap membawa PUJASUMA sebagai organisasi sosial yang lebih solid dan berkontribusi aktif bagi pembangunan daerah. Prosesi pelantikan berjalan lancar, diiringi dengan pembacaan sumpah janji pengurus untuk mengabdi kepada organisasi dan masyarakat luas dengan berpegang pada nilai-nilai budaya dan persatuan.\n\nKetua terpilih dalam pidatonya menegaskan komitmen PUJASUMA untuk menjadi perekat kebhinekaan. "PUJASUMA bukan hanya wadah bagi warga keturunan Jawa, tetapi rumah bagi siapa saja yang mencintai budaya dan ingin bersama-sama membangun OKU. Kami siap bersinergi dengan pemerintah dan semua elemen masyarakat untuk kemajuan bersama," tegasnya.\n\nAcara ini juga dimeriahkan dengan berbagai pertunjukan seni budaya Jawa yang memukau, menunjukkan kekayaan tradisi yang terus dilestarikan. Pemerintah Desa Batumarta 1 merasa terhormat telah dipercaya menjadi lokasi penyelenggaraan acara penting ini, yang sekaligus menjadi bukti kerukunan dan keharmonisan masyarakatnya.`
   },
   {
@@ -77,12 +62,7 @@ export const newsArticles = [
     title: 'PKK Desa Batumarta I Bentuk Class Balita',
     date: '13 Juli 2022',
     excerpt: 'Tim Penggerak PKK Desa Batumarta I membentuk Class Balita sebagai wadah edukasi dini yang mencakup aspek agama, motorik, dan sensorik. Program ini disambut positif oleh masyarakat setempat.',
-    image: {
-      "id": "news-1",
-      "description": "Ibu-ibu PKK Desa Batumarta I mengadakan pertemuan untuk program Class Balita.",
-      "imageUrl": "https://okes.disway.id/upload/2022/02/IMG-20220204-WA0022.jpg",
-      "imageHint": "community meeting"
-    },
+    image: findImage('news-1'),
     fullContent: `Sebagai wujud kepedulian terhadap tumbuh kembang generasi penerus, Tim Penggerak PKK Desa Batumarta 1 meluncurkan program inovatif bernama "Class Balita". Program ini dirancang sebagai sarana bermain sambil belajar bagi anak-anak usia dini, dengan fokus pada pengembangan aspek agama, motorik, dan sensorik.\n\nKegiatan yang diadakan setiap akhir pekan ini disambut dengan antusiasme tinggi oleh para ibu di desa. Bertempat di balai desa, anak-anak diajak untuk mengikuti berbagai aktivitas menyenangkan yang edukatif, seperti belajar doa-doa harian, bernyanyi, mewarnai, serta permainan yang merangsang perkembangan sensorik dan motorik halus mereka. Semua kegiatan dipandu oleh para kader PKK yang telah mendapatkan pelatihan khusus.\n\nKetua TP PKK Desa Batumarta 1 menjelaskan, "Masa balita adalah periode emas yang sangat krusial. Melalui Class Balita ini, kami ingin memberikan stimulasi yang tepat sejak dini, sekaligus menciptakan ruang interaksi sosial bagi anak-anak dan para ibu. Ini adalah investasi kita untuk masa depan desa."\n\nPara orang tua mengaku sangat terbantu dengan adanya program ini. "Anak saya jadi lebih ceria dan banyak belajar hal baru. Di sini mereka bisa bermain dengan teman-temannya sambil diajarkan hal-hal positif," ujar salah seorang ibu peserta. Inisiatif ini diharapkan dapat menjadi model bagi program pemberdayaan masyarakat lainnya di tingkat desa.`
   },
   {
@@ -98,12 +78,7 @@ export const newsArticles = [
     title: 'Masyarakat Desa Batumarta I Antusias Ikuti Program Vaksinasi',
     date: '28 Oktober 2021',
     excerpt: 'Tingginya kesadaran masyarakat Desa Batumarta 1 untuk mengikuti vaksinasi Covid-19 terlihat dari antusiasme warga yang datang ke lokasi vaksinasi di balai desa. Program ini merupakan upaya bersama untuk mencapai kekebalan komunal.',
-    image: {
-      "id": "news-5",
-      "description": "Tugu selamat datang di Desa Batumarta.",
-      "imageUrl": "https://okes.disway.id/upload/2021/11/ecc1323a-0ce0-4ca0-bbb0-e928e18ad6c9.jpg",
-      "imageHint": "welcome monument"
-    },
+    image: findImage('news-5'),
     fullContent: `Kesadaran akan pentingnya kesehatan kolektif ditunjukkan oleh ratusan warga Desa Batumarta 1 yang dengan antusias mengikuti program vaksinasi COVID-19 yang diselenggarakan oleh pemerintah daerah bekerja sama dengan puskesmas setempat. Sejak pagi, warga dari berbagai usia telah memadati area balai desa untuk mendapatkan dosis vaksin.\n\nAntrian yang panjang namun tertib menjadi pemandangan yang membanggakan, menunjukkan partisipasi aktif masyarakat dalam upaya memutus mata rantai penyebaran virus. Petugas kesehatan dibantu oleh perangkat desa dan relawan Karang Taruna bekerja tanpa lelah untuk memastikan proses vaksinasi berjalan lancar, mulai dari pendaftaran, skrining kesehatan, hingga observasi pasca-vaksinasi.\n\nSeorang warga lansia yang ikut dalam antrian mengungkapkan, "Saya ikut vaksin agar sehat dan bisa kembali beraktivitas dengan tenang. Ini adalah tanggung jawab kita bersama, bukan hanya untuk diri sendiri tapi juga untuk keluarga dan tetangga."\n\nKepala Desa Batumarta 1 memberikan apresiasi setinggi-tingginya kepada warganya. "Antusiasme ini adalah bukti bahwa warga Batumarta 1 cerdas dan peduli. Terima kasih kepada semua pihak yang terlibat, terutama tenaga kesehatan. Dengan bersama-sama, kita berupaya mencapai kekebalan komunal dan segera keluar dari pandemi," tandasnya. Program ini menjadi simbol gotong royong warga dalam menghadapi krisis kesehatan.`
   },
   {
@@ -133,7 +108,6 @@ export const galleryImages = [
     findImage('gallery-musyawarah'),
     findImage('gallery-bimtek'),
     findImage('gallery-posyandu'),
-    findImage('news-bimtek-aset'),
 ];
 
 export const publicServices = [
@@ -246,21 +220,19 @@ export const publicComplaints = [
     }
 ];
 
+export const mapLocations = [
+    { id: "balai_desa", name: "Balai Desa Batumarta 1", lat: -4.0543125, lng: 104.2740625, type: "pemerintahan" },
+    { id: "masjid_nurul_huda", name: "Masjid Nurul Huda", lat: -4.100, lng: 104.182, type: "ibadah" },
+    { id: "stadion_mini", name: "Stadion Mini Batumarta 1", lat: -4.095, lng: 104.178, type: "fasilitas" },
+    ...umkmList.map((umkm, index) => ({
+        id: `umkm_${index}`,
+        name: umkm.name,
+        lat: -4.054 + (Math.random() - 0.5) * 0.01, // Randomize around office
+        lng: 104.274 + (Math.random() - 0.5) * 0.01, // Randomize around office
+        type: 'umkm'
+    }))
+];
     
-
-
-
-
-
-
-
-
-
-
-    
-
-    
-
     
 
     

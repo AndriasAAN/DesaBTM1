@@ -1,4 +1,4 @@
-import { umkmList } from "@/lib/data";
+import { mapLocations } from "@/lib/data";
 import { MapPin } from "lucide-react";
 
 export const metadata = {
@@ -6,27 +6,12 @@ export const metadata = {
     description: "Peta digital interaktif Desa Batumarta 1 yang menunjukkan lokasi penting dan direktori UMKM.",
 };
 
-// Dummy coordinates for demonstration. Replace with real coordinates.
-const locations = [
-    { id: "balai_desa", name: "Balai Desa Batumarta 1", lat: -4.098, lng: 104.180, type: "pemerintahan" },
-    { id: "masjid_nurul_huda", name: "Masjid Nurul Huda", lat: -4.100, lng: 104.182, type: "ibadah" },
-    { id: "stadion_mini", name: "Stadion Mini Batumarta 1", lat: -4.095, lng: 104.178, type: "fasilitas" },
-    ...umkmList.map((umkm, index) => ({
-        id: `umkm_${index}`,
-        name: umkm.name,
-        lat: -4.097 + (Math.random() - 0.5) * 0.01, // Randomize for display
-        lng: 104.181 + (Math.random() - 0.5) * 0.01, // Randomize for display
-        type: 'umkm'
-    }))
-];
-
 export default function PetaPage() {
-    const balaiDesaLocation = locations.find(loc => loc.id === 'balai_desa');
-    const mapCenterLat = balaiDesaLocation?.lat || -4.0989;
-    const mapCenterLng = balaiDesaLocation?.lng || 104.175;
+    const balaiDesaLocation = mapLocations.find(loc => loc.id === 'balai_desa');
+    const mapCenterLat = balaiDesaLocation?.lat ?? -4.0543125;
+    const mapCenterLng = balaiDesaLocation?.lng ?? 104.2740625;
 
-    // Construct the new embed URL
-    const mapEmbedUrl = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.773356023397!2d${mapCenterLng}!3d${mapCenterLat}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e395460505f0a6d%3A0x464c23c52a4009a6!2sBatumarta%20I!5e0!3m2!1sid!2sid!4v1731600000000&z=17`;
+    const mapEmbedUrl = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15939.52923594199!2d${mapCenterLng}!3d${mapCenterLat}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e38e24a35555555%3A0xb694af1819d67543!2sKantor%20Kepala%20Desa%20Batumarta%20I!5e0!3m2!1sid!2sid!4v1620000000000&q=Q7WF%2B7M4`;
 
     return (
         <div className="container mx-auto px-4 md:px-6 py-12 md:py-20">
@@ -39,7 +24,7 @@ export default function PetaPage() {
 
             <div className="rounded-lg overflow-hidden shadow-lg border">
                 <iframe
-                    src={`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d996.1928045551049!2d${mapCenterLng}!3d${mapCenterLat}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNMKwMDUnNTIuOCJTIDEwNMKwMTAnNDguOCJF!5e0!3m2!1sid!2sid!4v1620000000000`}
+                    src={mapEmbedUrl}
                     width="100%"
                     height="500"
                     style={{ border: 0 }}
@@ -53,7 +38,7 @@ export default function PetaPage() {
             <div className="mt-12">
                  <h2 className="text-2xl font-headline font-semibold mb-6">Lokasi Penting</h2>
                  <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                     {locations.map(loc => (
+                     {mapLocations.map(loc => (
                          <div key={loc.id} className="flex items-center gap-3 bg-secondary p-3 rounded-lg">
                             <MapPin className="h-5 w-5 text-primary shrink-0" />
                             <span className="font-medium">{loc.name}</span>
