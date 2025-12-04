@@ -21,6 +21,13 @@ const locations = [
 ];
 
 export default function PetaPage() {
+    const balaiDesaLocation = locations.find(loc => loc.id === 'balai_desa');
+    const mapCenterLat = balaiDesaLocation?.lat || -4.0989;
+    const mapCenterLng = balaiDesaLocation?.lng || 104.175;
+
+    // Construct the new embed URL
+    const mapEmbedUrl = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.773356023397!2d${mapCenterLng}!3d${mapCenterLat}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e395460505f0a6d%3A0x464c23c52a4009a6!2sBatumarta%20I!5e0!3m2!1sid!2sid!4v1731600000000&z=17`;
+
     return (
         <div className="container mx-auto px-4 md:px-6 py-12 md:py-20">
             <div className="text-center mb-12">
@@ -32,7 +39,7 @@ export default function PetaPage() {
 
             <div className="rounded-lg overflow-hidden shadow-lg border">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15937.132895696184!2d104.17084534127074!3d-4.098905892557403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e395460505f0a6d%3A0x464c23c52a4009a6!2sBatumarta%20I%2C%20Kec.%20Lubuk%20Raja%2C%20Kabupaten%20Ogan%20Komering%20Ulu%2C%20Sumatera%20Selatan!5e0!3m2!1sid!2sid!4v1731600000000"
+                    src={`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d996.1928045551049!2d${mapCenterLng}!3d${mapCenterLat}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNMKwMDUnNTIuOCJTIDEwNMKwMTAnNDguOCJF!5e0!3m2!1sid!2sid!4v1620000000000`}
                     width="100%"
                     height="500"
                     style={{ border: 0 }}
