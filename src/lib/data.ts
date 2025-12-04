@@ -221,14 +221,14 @@ export const publicComplaints = [
 ];
 
 export const mapLocations = [
-    { id: "balai_desa", name: "Balai Desa Batumarta 1", lat: -4.0543125, lng: 104.2740625, type: "pemerintahan" },
+    { id: "balai_desa", name: "Balai Desa Batumarta 1", lat: -4.7374, lng: 104.1456, type: "pemerintahan" },
     { id: "masjid_nurul_huda", name: "Masjid Nurul Huda", lat: -4.100, lng: 104.182, type: "ibadah" },
     { id: "stadion_mini", name: "Stadion Mini Batumarta 1", lat: -4.095, lng: 104.178, type: "fasilitas" },
     ...umkmList.map((umkm, index) => ({
         id: `umkm_${index}`,
         name: umkm.name,
-        lat: -4.054 + (Math.random() - 0.5) * 0.01, // Randomize around office
-        lng: 104.274 + (Math.random() - 0.5) * 0.01, // Randomize around office
+        lat: -4.7374 + (Math.random() - 0.5) * 0.01,
+        lng: 104.1456 + (Math.random() - 0.5) * 0.01,
         type: 'umkm'
     }))
 ];
