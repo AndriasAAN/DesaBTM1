@@ -147,7 +147,7 @@ const Poll = () => {
                             ))}
                         </RadioGroup>
                         <Button type="submit" className="w-full">
-                            <CheckSquare className="mr-2 h-4 w-4" />
+                             <CheckSquare className="mr-2 h-4 w-4" />
                             Kirim Pilihan
                         </Button>
                     </form>
@@ -182,7 +182,25 @@ export default function Home() {
     <div className="flex flex-col min-h-screen">
       <main className="flex-grow">
         {/* Hero Section */}
-        <section className="relative w-full">
+        <section className="text-center pt-12 md:pt-20">
+            <div className="container mx-auto px-4 md:px-6">
+                <h1 className="text-4xl md:text-6xl font-headline font-bold text-foreground tracking-tight">
+                    Selamat Datang di Website Desa Batumarta 1
+                </h1>
+                <p className="mt-4 text-lg md:text-xl text-muted-foreground font-body max-w-4xl mx-auto">
+                    Kecamatan Lubuk Raja, Kabupaten Ogan Komering Ulu (OKU), Provinsi Sumatera Selatan
+                </p>
+                <Button asChild size="lg" className="mt-8">
+                    <Link href="/profil">
+                        <span>
+                            Jelajahi Profil Desa <ArrowRight className="inline-block ml-2 h-5 w-5" />
+                        </span>
+                    </Link>
+                </Button>
+            </div>
+        </section>
+
+        <section className="relative w-full mt-12">
             <Carousel
                 opts={{ loop: true }}
                 className="w-full"
@@ -190,7 +208,7 @@ export default function Home() {
                 <CarouselContent className="-ml-0">
                     {heroImages.map((image) => (
                          <CarouselItem key={image.id} className="pl-0">
-                             <div className="relative h-[60vh] md:h-[80vh] w-full flex items-center justify-center text-center text-white">
+                             <div className="relative h-[50vh] md:h-[60vh] w-full">
                                 <Image
                                     src={image.imageUrl}
                                     alt={image.description}
@@ -199,20 +217,7 @@ export default function Home() {
                                     priority={heroImages.indexOf(image) === 0}
                                     data-ai-hint={image.imageHint}
                                 />
-                                <div className="absolute inset-0 bg-black/50" />
-                                <div className="relative z-10 p-4 max-w-4xl mx-auto">
-                                    <h1 className="text-4xl md:text-6xl font-headline font-bold drop-shadow-lg tracking-tight">
-                                    Selamat Datang di Website Desa Batumarta 1
-                                    </h1>
-                                    <p className="mt-4 text-lg md:text-xl drop-shadow-sm font-body">
-                                    Kecamatan Lubuk Raja, Kabupaten Ogan Komering Ulu (OKU), Provinsi Sumatera Selatan
-                                    </p>
-                                    <Button asChild size="lg" className="mt-8 bg-primary text-primary-foreground hover:bg-primary/90">
-                                    <Link href="/profil">
-                                        Jelajahi Profil Desa <ArrowRight className="ml-2 h-5 w-5" />
-                                    </Link>
-                                    </Button>
-                                </div>
+                                <div className="absolute inset-0 bg-black/30" />
                             </div>
                          </CarouselItem>
                     ))}
@@ -286,7 +291,7 @@ export default function Home() {
                 <div className="text-center mt-12">
                     <Button asChild className="bg-primary text-primary-foreground hover:bg-primary/90">
                         <Link href="/berita">
-                            <Newspaper className="mr-2 h-4 w-4" /> Lihat Semua Berita
+                           <span><Newspaper className="mr-2 h-4 w-4" /> Lihat Semua Berita</span>
                         </Link>
                     </Button>
                 </div>
@@ -301,7 +306,7 @@ export default function Home() {
                             <p className="text-muted-foreground mt-1">Suara warga untuk desa yang lebih baik.</p>
                         </div>
                         <div className="space-y-6">
-                            {publicComplaints.slice(0, 2).map((complaint, index) => (
+                            {publicComplaints.slice(0, 3).map((complaint, index) => (
                                 <Card key={index} className="flex flex-col">
                                     <CardHeader>
                                         <div className="flex items-center gap-4">
@@ -323,7 +328,7 @@ export default function Home() {
                         <div className="mt-8">
                             <Button asChild variant="outline" className="w-full">
                                 <Link href="/layanan/pengaduan-masyarakat">
-                                    Lihat Semua Aspirasi & Sampaikan Masukan Anda <ArrowRight className="ml-2 h-4 w-4" />
+                                    <span>Lihat Semua Aspirasi <ArrowRight className="ml-2 h-4 w-4" /></span>
                                 </Link>
                             </Button>
                         </div>
@@ -429,7 +434,7 @@ export default function Home() {
                 <div className="text-center md:text-left mt-8">
                   <Button asChild variant="outline" className="text-primary border-primary hover:bg-primary hover:text-primary-foreground">
                     <Link href="/umkm">
-                      <Briefcase className="mr-2 h-4 w-4" /> Jelajahi Direktori UMKM
+                      <span><Briefcase className="mr-2 h-4 w-4" /> Jelajahi Direktori UMKM</span>
                     </Link>
                   </Button>
                 </div>
@@ -442,3 +447,5 @@ export default function Home() {
     </div>
   );
 }
+
+    
