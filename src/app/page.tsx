@@ -182,7 +182,7 @@ export default function Home() {
     <div className="flex flex-col min-h-screen">
       <main className="flex-grow">
         {/* Hero Section */}
-        <section className="text-center pt-12 md:pt-20">
+        <section className="text-center bg-secondary py-12 md:py-20">
             <div className="container mx-auto px-4 md:px-6">
                 <h1 className="text-4xl md:text-6xl font-headline font-bold text-foreground tracking-tight">
                     Selamat Datang di Website Desa Batumarta 1
@@ -200,7 +200,7 @@ export default function Home() {
             </div>
         </section>
 
-        <section className="relative w-full mt-12">
+        <section className="relative w-full">
             <Carousel
                 opts={{ loop: true }}
                 className="w-full"
@@ -447,5 +447,7 @@ export default function Home() {
     </div>
   );
 }
+
+    
 
     

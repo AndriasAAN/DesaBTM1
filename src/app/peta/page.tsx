@@ -1,3 +1,4 @@
+
 import { mapLocations } from "@/lib/data";
 import { MapPin } from "lucide-react";
 import Link from "next/link";
@@ -36,24 +37,8 @@ export default function PetaPage() {
                 ></iframe>
             </div>
 
-            <div className="mt-12">
-                 <h2 className="text-2xl font-headline font-semibold mb-6">Lokasi Penting</h2>
-                 <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                     {mapLocations.map(loc => (
-                         <a 
-                            key={loc.id} 
-                            href={`https://www.google.com/maps/search/?api=1&query=${loc.lat},${loc.lng}`}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="flex items-center gap-3 bg-secondary p-3 rounded-lg hover:bg-primary/10 hover:shadow-md transition-all duration-300"
-                         >
-                            <MapPin className="h-5 w-5 text-primary shrink-0" />
-                            <span className="font-medium">{loc.name}</span>
-                         </a>
-                     ))}
-                 </div>
-            </div>
-
         </div>
     );
 }
+
+    
