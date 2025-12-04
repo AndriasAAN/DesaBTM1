@@ -25,96 +25,6 @@
       "imageHint": "community gathering"
     },
     {
-      "id": "news-1",
-      "description": "Ibu-ibu PKK Desa Batumarta I mengadakan pertemuan untuk program Class Balita.",
-      "imageUrl": "https://okes.disway.id/upload/2022/02/IMG-20220204-WA0022.jpg",
-      "imageHint": "community meeting"
-    },
-    {
-      "id": "news-8",
-      "description": "Suasana sholat subuh berjemaah di Masjid Nurul Huda.",
-      "imageUrl": "https://radarpalembang.bacakoran.co/upload/a052d745a48d3f8e4977979c39ae861a.jpg",
-      "imageHint": "congregational prayer"
-    },
-    {
-      "id": "news-3",
-      "description": "Rapat warga di balai desa.",
-      "imageUrl": "https://images.unsplash.com/photo-1529070538774-1843cb3265df?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjb21tdW5pdHklMjBtZWV0aW5nfGVufDB8fHx8MTc2NDU3NDk3MXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "community meeting"
-    },
-    {
-      "id": "news-4",
-      "description": "Anak-anak desa bermain di lapangan.",
-      "imageUrl": "https://images.unsplash.com/photo-1647627611823-d08fa901678e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjaGlsZHJlbiUyMHBsYXlpbmd8ZW58MHx8fHwxNzY0NjQxNDE4fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "children playing"
-    },
-    {
-      "id": "news-5",
-      "description": "Tugu selamat datang di Desa Batumarta.",
-      "imageUrl": "https://okes.disway.id/upload/2021/11/ecc1323a-0ce0-4ca0-bbb0-e928e18ad6c9.jpg",
-      "imageHint": "welcome monument"
-    },
-    {
-      "id": "news-6",
-      "description": "Pertandingan sepak bola amatir di lapangan desa.",
-      "imageUrl": "https://okes.disway.id/upload/bfe8c5bcdd7755fe9c1403f6e7c0881f.jpg",
-      "imageHint": "soccer match"
-    },
-    {
-      "id": "news-7",
-      "description": "Pencanangan Desa Cinta Statistik (Desa CANTIK) di Desa Batumarta 1.",
-      "imageUrl": "https://stasan.okukab.go.id/wp-content/uploads/2021/06/WhatsApp-Image-2021-06-30-at-14.50.03.jpeg",
-      "imageHint": "data presentation"
-    },
-    {
-      "id": "gallery-10",
-      "description": "Pemandangan sawah yang hijau dan subur.",
-      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3IIzcUqvbz9OYOyODQpRZQ1hfT0GhQt-MFg&s",
-      "imageHint": "rice field"
-    },
-    {
-      "id": "gallery-11",
-      "description": "Ilustrasi pemandangan desa yang asri.",
-      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5beDpsxg3S6NV0CDmDPp6Wpn-y300D4WSgEeCvN9nyWEZP4WU0nlyuVtvQ6tGftghM3w&usqp=CAU",
-      "imageHint": "village illustration"
-    },
-    {
-      "id": "gallery-12",
-      "description": "Lahan pertanian warga desa.",
-      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm85ej13nsLQLevAK23Y849uJ0xJ00hFp63Q&s",
-      "imageHint": "farmland"
-    },
-    {
-      "id": "gallery-13",
-      "description": "Kegiatan Pencanangan Desa Cinta Statistik.",
-      "imageUrl": "https://stasan.okukab.go.id/wp-content/uploads/2021/06/WhatsApp-Image-2021-06-30-at-14.50.03-300x200.jpeg",
-      "imageHint": "village program"
-    },
-    {
-      "id": "gallery-14",
-      "description": "Suasana jalan di desa.",
-      "imageUrl": "https://scontent.fplm4-1.fna.fbcdn.net/v/t39.30808-6/535031400_1457850982202624_7367054682074815360_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeF5rs7Jqh2jumahIO_OF47S7wSwkZ5fys3vBLCRnl_KzXPTJF4wn3z6kvNlkj8ZJs8&_nc_ohc=XGhv9DNrnGAQ7kNvwEJX9x_&_nc_oc=AdllqJe4cUY1Et3ElAxIWUevuOQ9OUZhwmhewL7Vuc2z_65YB9TDa5_UxPa6rzQjsCc&_nc_zt=23&_nc_ht=scontent.fplm4-1.fna&_nc_gid=3Ewv-6T6srGG_Xg1LJgqtA&oh=00_AfmZPnRFn7NfeIm8xQ8yB9eWMrNPIzICLoBqi6Q3cUOhOg&oe=693480A5",
-      "imageHint": "village road"
-    },
-    {
-      "id": "gallery-15",
-      "description": "Suasana jalan di desa.",
-      "imageUrl": "https://scontent.fplm4-1.fna.fbcdn.net/v/t39.30808-6/532197021_122260909724236140_2137839990775999721_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGjSSJLSwI8Xx5ZgGNLs98ldPFb04FVFWR08VvTgVUVZNQ-5NB6W3WPPxvipB1qK2w&_nc_ohc=ohLk3MpmYSoQ7kNvwGeGNIL&_nc_oc=Adl0eDir7PG1OhzcDro7mSGSeBeCXdpd5r1qA8_TQZaoig_1fc05TiXsmtLq8BdNSp0&_nc_zt=23&_nc_ht=scontent.fplm4-1.fna&_nc_gid=_kMZPKhuJnkMEtKYQh8Qxg&oh=00_AflHZjN--9HaqF8v7Js3r0HeAMKU6I1bc3bIdg303U24Dw&oe=693494A0",
-      "imageHint": "village road"
-    },
-    {
-      "id": "gallery-16",
-      "description": "Lomba Paduan Suara",
-      "imageUrl": "https://scontent.fplm4-1.fna.fbcdn.net/v/t39.30808-6/536275866_1459805308673858_5253921904716686448_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeH-y06LhWY3Hf2P8iDlVAk0oRXGqyQPfROhFcarJA99E3JkH7L2jF6-m33NloaeaeY&_nc_ohc=Y5z32aB-op0Q7kNvwHJaKnN&_nc_oc=AdlQCW_fcjRDx0knW0yMLgXvXJIFCs-KeWgE9Akw3N0LoZzyl5ojwct9J05Hq_zFjlo&_nc_zt=23&_nc_ht=scontent.fplm4-1.fna&_nc_gid=wNWTPrFGbZb7ZOW4DwlJWg&oh=00_AfkfFdHOhzfG-criGoz0Pu9SR7qtTqgweq-Tn2hw0GDWwQ&oe=6935980C",
-      "imageHint": "flag ceremony"
-    },
-    {
-      "id": "umkm-4",
-      "description": "Suasana di Kedai Al Fazza.",
-      "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipMUalqLV0mc43rfXZytnBdFKG5FzY2wzDAI2R13=s1360-w1360-h1020-rw",
-      "imageHint": "modern cafe"
-    },
-    {
       "id": "profile-history",
       "description": "Tugu selamat datang di Desa Batumarta 1",
       "imageUrl": "https://scontent.fplm4-1.fna.fbcdn.net/v/t39.30808-6/480788342_610680478406220_7795424995330966628_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeG0qFe4JbbYlOBtXuj3xbSzYhfa1I2NU89iF9rUjY1Tz6H_FQEKCuKaCUM9u3qPQk0&_nc_ohc=FPCDmA09x-8Q7kNvwFKh_8Q&_nc_oc=AdmSX2x8mtTBzxY_tXuPdMrCgqSt-eiZ878SsnPzwIeItryQN3bbH4PJEqGAEwkkx7Y&_nc_zt=23&_nc_ht=scontent.fplm4-1.fna&_nc_gid=qic-ZhOwcA7jL7b4z0-rmA&oh=00_Afnb0qF7RA5dbPB9bq1bE_35iTHh80dovvTRTmTP5WaVKA&oe=6934765E",
@@ -179,6 +89,18 @@
       "description": "Peternakan Kambing dalam program Ketahanan Pangan Desa Batumarta 1.",
       "imageUrl": "https://scontent.fplm4-1.fna.fbcdn.net/v/t39.30808-6/551415104_31531751526471242_2068632993577506587_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeH95n1o3gjJoGGl0EyMQXcNxag5uXPVAgfFqDm5c9UCB_9jd9inmkybJlCjbSY3c-4&_nc_ohc=8CmMWcfsB6kQ7kNvwHssZaj&_nc_oc=AdmuGYp32TRzYgjhIouIqZJHPRrFK06_mTR-RKEHF8JxaNS1z2KsBwnsEhF8Z9PDehI&_nc_zt=23&_nc_ht=scontent.fplm4-1.fna&_nc_gid=upyl7Hr-pON7LkzeGZQTOw&oh=00_AfnJVvx1m1Xqie1BLD9v4kTk59KcbtREkVe3d9gSQDi1Eg&oe=6935D6D5",
       "imageHint": "goat farm"
+    },
+    {
+      "id": "news-bimtek-aset",
+      "description": "Bimbingan Teknis Pengelolaan Aset Desa oleh pemateri dari kecamatan dan kabupaten.",
+      "imageUrl": "https://scontent.fplm4-1.fna.fbcdn.net/v/t39.30808-6/589108981_32622832137363170_8814337901215802721_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHu4qMqjv9KKPOlAeCSaPezJwSQAlKzJTYnBJACUrMlNlRrwzjOt0WWeQJ7AWenY8o&_nc_ohc=yj9XnkQWdSwQ7kNvwG31GZD&_nc_oc=Adk-DWD3l5NhexDJfAZJBVb6F_11XRKPFgcuC-kutwMXxnZdbuyKX5CnM1T1B0GirV0&_nc_zt=23&_nc_ht=scontent.fplm4-1.fna&_nc_gid=4JA8-V3jmtidJGH3Joq60A&oh=00_AflShHtCZKfSmrPVwH1gvq9MoqXrQf1A6W5WBlsOiHzOHA&oe=6936BC34",
+      "imageHint": "village meeting"
+    },
+    {
+      "id": "umkm-4",
+      "description": "Suasana di Kedai Al Fazza.",
+      "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipMUalqLV0mc43rfXZytnBdFKG5FzY2wzDAI2R13=s1360-w1360-h1020-rw",
+      "imageHint": "modern cafe"
     }
   ]
 }

@@ -18,6 +18,13 @@ export const navItems = [
 
 export const newsArticles = [
   {
+    id: '13',
+    title: 'Desa Batumarta 1 Gelar BIMTEK Pengelolaan Aset Desa',
+    date: '15 Oktober 2024',
+    excerpt: 'Pemerintah Desa Batumarta 1 menyelenggarakan Bimbingan Teknis (BIMTEK) tentang pengelolaan aset desa. Acara ini menghadirkan pembicara dari kecamatan dan kabupaten untuk meningkatkan kapasitas perangkat desa dalam mengelola aset secara transparan dan akuntabel.',
+    image: findImage('news-bimtek-aset')
+  },
+  {
     id: '12',
     title: 'Perangkat Desa Adakan Musyawarah Rutin Bahas Kemajuan Desa',
     date: '10 Oktober 2024',
@@ -116,6 +123,7 @@ export const galleryImages = [
     findImage('gallery-musyawarah'),
     findImage('gallery-bimtek'),
     findImage('gallery-posyandu'),
+    findImage('news-bimtek-aset'),
 ];
 
 export const publicServices = [
