@@ -1,5 +1,6 @@
 import { mapLocations } from "@/lib/data";
 import { MapPin } from "lucide-react";
+import Link from "next/link";
 
 export const metadata = {
     title: "Peta Digital Desa - Website Desa Batumarta 1",
@@ -11,8 +12,6 @@ export default function PetaPage() {
     const mapCenterLat = balaiDesaLocation?.lat ?? -4.2043579;
     const mapCenterLng = balaiDesaLocation?.lng ?? 104.2741977;
 
-    // Constructing the URL for an embedded map focused on a specific point with a reasonable zoom level (e.g., 15)
-    // The `q` parameter places a marker, and `ll` centers the map. `z` sets the zoom.
     const mapEmbedUrl = `https://maps.google.com/maps?q=${mapCenterLat},${mapCenterLng}&z=17&output=embed&t=k`;
 
     return (
@@ -41,10 +40,16 @@ export default function PetaPage() {
                  <h2 className="text-2xl font-headline font-semibold mb-6">Lokasi Penting</h2>
                  <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
                      {mapLocations.map(loc => (
-                         <div key={loc.id} className="flex items-center gap-3 bg-secondary p-3 rounded-lg">
+                         <a 
+                            key={loc.id} 
+                            href={`https://www.google.com/maps/search/?api=1&query=${loc.lat},${loc.lng}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center gap-3 bg-secondary p-3 rounded-lg hover:bg-primary/10 hover:shadow-md transition-all duration-300"
+                         >
                             <MapPin className="h-5 w-5 text-primary shrink-0" />
                             <span className="font-medium">{loc.name}</span>
-                         </div>
+                         </a>
                      ))}
                  </div>
             </div>
