@@ -220,15 +220,18 @@ export const publicComplaints = [
     }
 ];
 
+const balaiDesaLat = -4.0980556;
+const balaiDesaLng = 104.1802778;
+
 export const mapLocations = [
-    { id: "balai_desa", name: "Balai Desa Batumarta 1", lat: -4.7374, lng: 104.1456, type: "pemerintahan" },
-    { id: "masjid_nurul_huda", name: "Masjid Nurul Huda", lat: -4.100, lng: 104.182, type: "ibadah" },
-    { id: "stadion_mini", name: "Stadion Mini Batumarta 1", lat: -4.095, lng: 104.178, type: "fasilitas" },
+    { id: "balai_desa", name: "Kantor Kepala Desa Batumarta 1", lat: balaiDesaLat, lng: balaiDesaLng, type: "pemerintahan" },
+    { id: "masjid_nurul_huda", name: "Masjid Nurul Huda", lat: -4.0963, lng: 104.1815, type: "ibadah" },
+    { id: "stadion_mini", name: "Stadion Mini Batumarta 1", lat: -4.101, lng: 104.182, type: "fasilitas" },
     ...umkmList.map((umkm, index) => ({
         id: `umkm_${index}`,
         name: umkm.name,
-        lat: -4.7374 + (Math.random() - 0.5) * 0.01,
-        lng: 104.1456 + (Math.random() - 0.5) * 0.01,
+        lat: balaiDesaLat + (Math.random() - 0.5) * 0.005, // Randomize slightly around the village center
+        lng: balaiDesaLng + (Math.random() - 0.5) * 0.005,
         type: 'umkm'
     }))
 ];

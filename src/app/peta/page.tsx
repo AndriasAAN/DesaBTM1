@@ -8,10 +8,12 @@ export const metadata = {
 
 export default function PetaPage() {
     const balaiDesaLocation = mapLocations.find(loc => loc.id === 'balai_desa');
-    const mapCenterLat = balaiDesaLocation?.lat ?? -4.7374;
-    const mapCenterLng = balaiDesaLocation?.lng ?? 104.1456;
+    const mapCenterLat = balaiDesaLocation?.lat ?? -4.0980556;
+    const mapCenterLng = balaiDesaLocation?.lng ?? 104.1802778;
 
-    const mapEmbedUrl = `https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3984.347314275062!2d${mapCenterLng}!3d${mapCenterLat}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1719527226006!5m2!1sid!2sid&q=${mapCenterLat},${mapCenterLng}`;
+    // Constructing the URL for an embedded map focused on a specific point with a reasonable zoom level (e.g., 15)
+    // The `q` parameter places a marker, and `ll` centers the map. `z` sets the zoom.
+    const mapEmbedUrl = `https://maps.google.com/maps?q=${mapCenterLat},${mapCenterLng}&z=16&output=embed`;
 
     return (
         <div className="container mx-auto px-4 md:px-6 py-12 md:py-20">
